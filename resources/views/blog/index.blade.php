@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <style>
 </style>
-<script src=""></script>
+<script src="{{ asset('js/app.js') }}"></script>
 <body>
 <h1>Hello</h1>
 
