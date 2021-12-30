@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use App\Models\Post;
+use Illuminate\Database\Eloquent\Collection;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(): array|Collection
     {
-        //
+        return Post::all();
     }
 
     public function create()
@@ -23,9 +24,9 @@ class PostController extends Controller
         //
     }
 
-    public function show(Post $post)
+    public function show(Post $post): Post
     {
-        //
+        return $post;
     }
 
     public function edit(Post $post)
