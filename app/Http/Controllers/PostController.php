@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePostRequest;
-use App\Http\Requests\UpdatePostRequest;
 use App\Models\Post;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -19,9 +18,11 @@ class PostController extends Controller
         //
     }
 
-    public function store(StorePostRequest $request)
+    public function store(Request $request): void
     {
-        //
+        $post = new Post();
+        $this->setPostModelParams($post, $request);
+        $post->save();
     }
 
     public function show(Post $post): Post
@@ -35,14 +36,24 @@ class PostController extends Controller
     }
 
 
-    public function update(UpdatePostRequest $request, Post $post)
+    public function update(Request $request, Post $post): void
     {
-        //
+        $this->setPostModelParams($post, $request);
+        $post->update();
     }
 
 
-    public function destroy(Post $post)
+    public function destroy(Post $post): void
     {
-        //
+        $post->delete();
+    }
+
+    private function setPostModelParams(Post $post, Request $request): void
+    {
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->imageLink = $request->imageLink;
+        $post->link = $request->link;
+        $post->content = $request->htmlContent;
     }
 }
