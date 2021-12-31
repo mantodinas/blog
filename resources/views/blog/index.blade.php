@@ -8,8 +8,66 @@
 </style>
 <script src="{{ asset('js/app.js') }}"></script>
 <body>
-<h1>Hello</h1>
 
-<button type="button" class="btn btn-primary">Primary</button>
+<header>
+    <div class="nav-bar-container">
+        <div class="nav-bar">
+            <img src="img/logo.jpg">
+            <a href="#">main</a>
+            <a href="#">about</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <h1>write blog</h1>
+        <div class="blog">
+            <h2>title</h2>
+            <p class="date">2021 12 30</p>
+            <p class="description">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laudantium distinctio aperiam ducimus quod maxime, earum modi esse impedit eos. Ipsa harum corrupti in odio architecto ut optio atque voluptatibus iusto quis. Ipsa obcaecati tempora ad dolores placeat, odio fuga quidem! Rem unde reiciendis, culpa debitis voluptatum magni perferendis obcaecati natus repudiandae nam, accusamus nisi earum nesciunt cumque! Molestiae quo recusandae, aperiam et ab nam repellat! Sit, vel deserunt aspernatur, soluta provident omnis delectus voluptatibus minima in blanditiis, excepturi aut laudantium enim doloribus asperiores totam dolorem voluptas. Quas, suscipit. Assumenda modi suscipit dolore cumque! Ducimus autem minima veritatis vero maiores?</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+        <div class="footer-container" id="about">
+
+            <div class="footer-top">
+                <div class="tooltip" data-tooltip="instagram">
+                    <a href="https://www.instagram.com/m.petrauskas/">
+                        <img src="#">
+                    </a>
+                </div>
+
+                <div class="tooltip" data-tooltip="twitter">
+                    <a href="https://twitter.com/Mantodinas">
+                        <img src="#">
+                    </a>
+                </div>
+
+                <div class="tooltip" data-tooltip="linkedin">
+                    <a href="https://www.linkedin.com/in/mantas-petrauskas-56781b142/">
+                        <img src="#">
+                    </a>
+                </div>
+
+                <div class="tooltip" data-tooltip="github">
+                    <a href="https://github.com/mantodinas">
+                        <img src="#">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    info
+                    <br> Copyright © 2021 all rights reserved
+                    <br> Designed by Mantas Petrauskas
+                </p>
+            </div>
+        </div>
+</footer>
+
 </body>
 </html>
