@@ -4,25 +4,35 @@ body {
 }
 
 header .nav-bar-container .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background-color: #585858;
 }
+
 header .nav-bar-container .nav-bar img {
   position: relative;
   width: 199px;
   padding: 10px;
 }
+
 header .nav-bar-container .nav-bar a {
   text-transform: capitalize;
   text-decoration: none;
   color: white;
   padding: 10px;
 }
+
 header .nav-bar-container .nav-bar a:hover {
   background-color: gray;
 }
+
 header .nav-bar-container .nav-bar input {
   text-transform: capitalize;
   padding: 10px;
@@ -31,56 +41,91 @@ header .nav-bar-container .nav-bar input {
 
 main {
   padding: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   max-width: 1024px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   gap: 20px;
 }
+
 main .container {
-  box-shadow: 5px 3px 30px 0.3px;
+  -webkit-box-shadow: 5px 3px 30px 0.3px;
+          box-shadow: 5px 3px 30px 0.3px;
 }
+
 main .container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: capitalize;
 }
+
 main .container .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: white;
   padding: 10px;
 }
+
 main .container .blog h2, main .container .blog .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: capitalize;
 }
+
 main .container .blog .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
 }
+
 main .container .blog .button-container .btn-edit, main .container .blog .button-container .btn-delete {
   border: none;
   background-color: grey;
   border-radius: 5px;
   padding: 3px;
 }
+
 main .container .blog .button-container .btn-edit a, main .container .blog .button-container .btn-delete a {
   text-transform: capitalize;
   text-decoration: none;
   color: white;
 }
+
 main .container .blog .button-container .btn-edit:hover {
   background-color: #6a6aff;
 }
+
 main .container .blog .button-container .btn-delete:hover {
   background-color: #9e1c1c;
 }
@@ -89,11 +134,18 @@ footer {
   background-color: gray;
   padding: 20px 0 20px 0;
 }
+
 footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 footer .footer-container .footer-bottom p {
   text-align: center;
   color: white;
 }
+/*# sourceMappingURL=app.css.map */
