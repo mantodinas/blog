@@ -10,11 +10,24 @@ header {
         .nav-bar {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             gap: 20px;
+            background-color: rgb(88, 88, 88);
 
             img {
-                width: 50px;
+                position: relative;
+                width: 199px;
+                padding: 10px;
+            }
+
+            a {
+                text-transform: capitalize;
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                &:hover {
+                    background-color: gray;
+                }
             }
         }
     }
@@ -23,8 +36,10 @@ header {
 main {
     padding: 20px 0 20px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: yellowgreen;
+    gap: 20px;
 
     .container {
         padding: 10px;
@@ -33,6 +48,9 @@ main {
         border-radius: 10px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 3px 30px 0.3px;
 
         h1 {
             display: flex;
@@ -53,6 +71,41 @@ main {
                 display: flex;
                 justify-content: center;
             }
+
+            .button-container {
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+
+                .btn-edit, .btn-delete {
+                    border: none;
+                    background-color: grey;
+                    
+                    a {
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
         }
     }
+}
+
+footer {
+    background-color: gray;
+    padding: 20px 0 20px 0;
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+
+        .footer-bottom {
+            p {
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
 }
