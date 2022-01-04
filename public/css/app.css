@@ -11353,11 +11353,19 @@ main .container .blog .button-container {
 main .container .blog .button-container .btn-edit, main .container .blog .button-container .btn-delete {
   border: none;
   background-color: grey;
+  border-radius: 5px;
+  padding: 3px;
 }
 main .container .blog .button-container .btn-edit a, main .container .blog .button-container .btn-delete a {
   text-transform: capitalize;
   text-decoration: none;
   color: white;
+}
+main .container .blog .button-container .btn-edit:hover {
+  background-color: #6a6aff;
+}
+main .container .blog .button-container .btn-delete:hover {
+  background-color: #9e1c1c;
 }
 
 footer {

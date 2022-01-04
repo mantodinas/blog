@@ -80,11 +80,25 @@ main {
                 .btn-edit, .btn-delete {
                     border: none;
                     background-color: grey;
+                    border-radius: 5px;
+                    padding: 3px;
                     
                     a {
                         text-transform: capitalize;
                         text-decoration: none;
                         color: white;
+                    }
+                }
+
+                .btn-edit {
+                    &:hover {
+                        background-color: rgb(106, 106, 255);
+                    }
+                }
+
+                .btn-delete {
+                    &:hover {
+                        background-color: rgb(158, 28, 28);
                     }
                 }
             }
