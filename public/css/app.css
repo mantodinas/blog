@@ -11313,13 +11313,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: yellowgreen;
+  background-color: white;
   gap: 20px;
 }
 main .container {
   padding: 10px;
   width: 1024px;
-  background-color: blue;
+  background-color: gray;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -11337,7 +11337,7 @@ main .container .blog {
   justify-content: center;
   flex-direction: column;
   width: 80%;
-  background-color: yellow;
+  background-color: white;
   border-radius: 10px;
   padding: 10px;
 }
