@@ -91,7 +91,14 @@ footer {
 }
 footer .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+footer .footer-container .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 footer .footer-container .footer-bottom p {
   text-align: center;

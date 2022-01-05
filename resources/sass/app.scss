@@ -106,7 +106,15 @@ footer {
 
     .footer-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+
+        .footer-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
 
         .footer-bottom {
             p {
@@ -115,5 +123,4 @@ footer {
             }
         }
     }
-
 }

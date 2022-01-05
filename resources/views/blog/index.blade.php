@@ -16,6 +16,7 @@
                 <div class="nav-bar-top">
                     <h1>techno blog</h1>
                 </div>
+                
                 <div class="nav-bar-bottom">
                     <a href="#">main</a>
                     <a href="#">about</a>
@@ -79,42 +80,41 @@
 </main>
 
 <footer>
-        <div class="footer-container" id="about">
-
-            <div class="footer-top">
-                <div class="tooltip" data-tooltip="instagram">
-                    <a href="https://www.instagram.com/m.petrauskas/">
-                        <img src="#">
-                    </a>
-                </div>
-
-                <div class="tooltip" data-tooltip="twitter">
-                    <a href="https://twitter.com/Mantodinas">
-                        <img src="#">
-                    </a>
-                </div>
-
-                <div class="tooltip" data-tooltip="linkedin">
-                    <a href="https://www.linkedin.com/in/mantas-petrauskas-56781b142/">
-                        <img src="#">
-                    </a>
-                </div>
-
-                <div class="tooltip" data-tooltip="github">
-                    <a href="https://github.com/mantodinas">
-                        <img src="#">
-                    </a>
-                </div>
+    <div class="footer-container" id="about">
+        <div class="footer-top">
+            <div class="tooltip" data-tooltip="instagram">
+                <a href="https://www.instagram.com/m.petrauskas/">
+                    <img src="#">
+                </a>
             </div>
 
-            <div class="footer-bottom">
-                <p>
-                    Info
-                    <br> Website created for educational purposes learning and improving front end.
-                    <br> Designed by Mantas Petrauskas
-                </p>
+            <div class="tooltip" data-tooltip="twitter">
+                <a href="https://twitter.com/Mantodinas">
+                    <img src="#">
+                </a>
+            </div>
+
+            <div class="tooltip" data-tooltip="linkedin">
+                <a href="https://www.linkedin.com/in/mantas-petrauskas-56781b142/">
+                    <img src="#">
+                </a>
+            </div>
+
+            <div class="tooltip" data-tooltip="github">
+                <a href="https://github.com/mantodinas">
+                    <img src="#">
+                </a>
             </div>
         </div>
+
+        <div class="footer-bottom">
+            <p>
+                Info
+                <br> Website created for educational purposes learning and improving front end.
+                <br> Designed by Mantas Petrauskas
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>
