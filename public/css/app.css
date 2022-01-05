@@ -58,59 +58,31 @@ header .nav-bar-container .nav-bar .nav-bar-bottom .search {
 }
 
 main {
-  padding: 20px 0 20px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: white;
-  max-width: 1024px;
+}
+main .main-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 300px 300px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 20px;
 }
-main .container {
-  box-shadow: 5px 3px 30px 0.3px;
-}
-main .container h1 {
-  display: flex;
-  justify-content: center;
-  text-transform: capitalize;
-}
-main .container .blog {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 10px;
-}
-main .container .blog h2, main .container .blog .date {
-  display: flex;
-  justify-content: center;
-  text-transform: capitalize;
-}
-main .container .blog .button-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-main .container .blog .button-container .btn-edit, main .container .blog .button-container .btn-delete {
-  border: none;
+main .main-container .blog {
   background-color: grey;
-  border-radius: 5px;
-  padding: 3px;
 }
-main .container .blog .button-container .btn-edit a, main .container .blog .button-container .btn-delete a {
+main .main-container .blog img {
+  width: 20%;
+}
+main .main-container .blog h2 {
+  text-align: center;
   text-transform: capitalize;
-  text-decoration: none;
-  color: white;
 }
-main .container .blog .button-container .btn-edit:hover {
-  background-color: #6a6aff;
-}
-main .container .blog .button-container .btn-delete:hover {
-  background-color: #9e1c1c;
+main .main-container .blog p {
+  padding: 10px;
 }
 
 footer {
