@@ -75,31 +75,49 @@ header {
 main {
     display: flex;
     justify-content: center;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    
+    .latest-blog-indigator {
+        background-color: yellowgreen;
+        width: 30px;
+        height: 20px;
+        position: absolute;
+    }
 
-    .main-container {
+    .blog-container {
         display: grid;
         grid-template-columns: 500px 500px;
-        grid-template-rows: 300px 300px;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         justify-items: stretch;
         align-items: stretch;
-        padding: 20px;
+        padding: 20px 10px 20px 10px;
+        margin-top: 5%;
 
         .blog {
-            background-color: grey;
+            background-color: white;
 
-            img {
-                width: 20%;
+            .blog-img {
+                width: 100%;
             }
             
-            h2 {
+            .blog-title {
                 text-align: center;
                 text-transform: capitalize;
             }
 
-            p {
-                padding: 10px;
+            .short-description {
+                padding: 0 10px 0 10px;
+            }
+
+            .day-added {
+                display: flex;
+                justify-content: right;
+                padding: 0 20px 0 20px;
             }
         }
     }

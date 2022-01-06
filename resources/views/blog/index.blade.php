@@ -27,54 +27,57 @@
 </header>
 
 <main>
-    <div class="main-container">
+    <div class="blog-container">
+
         <div class="blog">
-            <h2>blog 1</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <div class="latest-blog-indigator"></div>
+            
+            <img class="blog-img" src="img/blog-example-img/blog1.jpg">
+            <h2 class="blog-title">blog 1 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
 
         <div class="blog">
-            <h2>blog 2</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <img class="blog-img" src="img/blog-example-img/blog2.jpg">
+            <h2 class="blog-title">blog 2 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
 
         <div class="blog">
-            <h2>blog 3</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <img class="blog-img" src="img/blog-example-img/blog3.jpg">
+            <h2 class="blog-title">blog 3 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
 
         <div class="blog">
-            <h2>blog 4</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <img class="blog-img" src="img/blog-example-img/blog4.jpg">
+            <h2 class="blog-title">blog 4 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
 
         <div class="blog">
-            <h2>blog 5</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <img class="blog-img" src="img/blog-example-img/blog5.jpg">
+            <h2 class="blog-title">blog 5 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
 
         <div class="blog">
-            <h2>blog 6</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <img class="blog-img" src="img/blog-example-img/blog6.jpg">
+            <h2 class="blog-title">blog 6 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
 
         <div class="blog">
-            <h2>blog 7</h2>
-            <h2>2022 01 04</h2>
-            <img src="img/logo.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sed, eaque labore impedit sint magni.</p>
+            <img class="blog-img" src="img/blog-example-img/blog7.jpg">
+            <h2 class="blog-title">blog 7 title about technology</h2>
+            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
+            <p class="day-added">2022 01 01</p>
         </div>
     </div>
 </main>

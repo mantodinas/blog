@@ -104,39 +104,62 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .main-container {
+main .latest-blog-indigator {
+  background-color: yellowgreen;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+}
+
+main .blog-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 500px 500px;
       grid-template-columns: 500px 500px;
-  -ms-grid-rows: 300px 300px;
-      grid-template-rows: 300px 300px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   justify-items: stretch;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
+  margin-top: 5%;
 }
 
-main .main-container .blog {
-  background-color: grey;
+main .blog-container .blog {
+  background-color: white;
 }
 
-main .main-container .blog img {
-  width: 20%;
+main .blog-container .blog .blog-img {
+  width: 100%;
 }
 
-main .main-container .blog h2 {
+main .blog-container .blog .blog-title {
   text-align: center;
   text-transform: capitalize;
 }
 
-main .main-container .blog p {
-  padding: 10px;
+main .blog-container .blog .short-description {
+  padding: 0 10px 0 10px;
+}
+
+main .blog-container .blog .day-added {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 0 20px 0 20px;
 }
 
 footer {
