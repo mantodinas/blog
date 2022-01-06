@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/',  [BlogController::class, 'index']);
-Route::get('/', [PostController::class, 'index']);
+Route::get('/',  [BlogController::class, 'index']);
+// Route::get('/', [PostController::class, 'index']);
 Route::get('/post/{post:link}', [PostController::class, 'show']);
 Route::post('/post', [PostController::class, 'store']);
 Route::patch('/post/{post:link}', [PostController::class, 'update']);
