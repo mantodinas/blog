@@ -6,33 +6,39 @@ body {
 header {
     .nav-bar-container{
         .nav-bar {
-            height: 200px;
+            background-image: url(../img/header-img1.jpg);
+            background-size: 100%;
+            background-attachment: fixed;
+            height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             background-color: rgb(88, 88, 88);
 
-            img {
-                display: flex;
-                justify-content: center;
-                position: absolute;
-                width: 250px;
-                margin-left: 11%;
-                margin-top: 3%;
-                padding: 10px;
-            }
-
+            
             .nav-bar-top {
                 display: flex;
-                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
                 height: 70%;
 
+                img {
+                    display: flex;
+                    align-self: flex-start;
+                    width: 13%;
+                    padding: 20px 0 0 0;
+                    position: relative;
+                    right: 8%;
+                }
+
                 h1 {
-                    margin-top: 5%;
-                    margin-left: 33%;
+                    align-self: center;
                     text-transform: capitalize;
-                    font-size: 50px;
-                    color: white;
+                    font-size: 60px;
+                    color: blue;
+                    -webkit-text-stroke: 0.3px white;
+                    position: relative;
+                    right: 7%;
                 }
             }
 
@@ -60,7 +66,6 @@ header {
                     border-bottom: 1px solid grey;
                     padding: 10px;
                     border: none;
-                    margin-bottom: 1px;
                 }
             }
         }

@@ -4,7 +4,10 @@ body {
 }
 
 header .nav-bar-container .nav-bar {
-  height: 200px;
+  background-image: url(../img/header-img1.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,36 +21,39 @@ header .nav-bar-container .nav-bar {
   background-color: #585858;
 }
 
-header .nav-bar-container .nav-bar img {
+header .nav-bar-container .nav-bar .nav-bar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  width: 250px;
-  margin-left: 11%;
-  margin-top: 3%;
-  padding: 10px;
-}
-
-header .nav-bar-container .nav-bar .nav-bar-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  width: 100%;
   height: 70%;
 }
 
+header .nav-bar-container .nav-bar .nav-bar-top img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 13%;
+  padding: 20px 0 0 0;
+  position: relative;
+  right: 8%;
+}
+
 header .nav-bar-container .nav-bar .nav-bar-top h1 {
-  margin-top: 5%;
-  margin-left: 33%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-transform: capitalize;
-  font-size: 50px;
-  color: white;
+  font-size: 60px;
+  color: blue;
+  -webkit-text-stroke: 0.3px white;
+  position: relative;
+  right: 7%;
 }
 
 header .nav-bar-container .nav-bar .nav-bar-bottom {
@@ -89,7 +95,6 @@ header .nav-bar-container .nav-bar .nav-bar-bottom .search {
   border-bottom: 1px solid grey;
   padding: 10px;
   border: none;
-  margin-bottom: 1px;
 }
 
 main {
