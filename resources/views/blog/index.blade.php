@@ -7,6 +7,8 @@
 <style>
 </style>
 <script src="{{ asset('js/app.js') }}"></script>
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+<script src="https://kit.fontawesome.com/5194a01915.js" crossorigin="anonymous"></script>
 <body>
 
 <header>
