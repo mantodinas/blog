@@ -22,7 +22,8 @@
 
     <div class="logo-container">
         <div class="logo">
-            techno blog
+            <h1 class="text1">techno</h1>
+            <h1 class="text2">blog</h1>
         </div>
     </div>
 </header>

@@ -49,10 +49,8 @@ header {
             text-decoration: none;
             padding: 5px 20px 5px 20px;
             height: 35px;
-            background-color: rgb(233, 229, 229);
+            background-color: rgb(179, 179, 179);
             color: black;
-            border-right-style: solid;
-            border-right-color: rgb(150, 150, 150);
             &:hover {
                 background-color: grey;
                 color: white;
@@ -65,7 +63,7 @@ header {
             padding-left: 20px;
             background-color: rgb(247, 247, 247); 
             &:focus {
-                border: 3px solid #555;
+                background-color: rgb(236, 235, 235);
                 outline: none;//removes mouse clicked line
             }
         }
@@ -78,13 +76,29 @@ header {
     .logo-container {
         display: flex;
         justify-content: center;
+
         .logo {
             width: 1000px;
             color: black;
             height: 100px;
-            background-color: white;
+            background-color: transparent;
             padding: 10px;
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            h1 {
+                text-transform: capitalize;
+                font-size: 80px;
+            }
+
+            .text1 {
+                color: white;
+            }
+
+            .text2 {
+                color: grey;
+            }
         }
     }
 }
