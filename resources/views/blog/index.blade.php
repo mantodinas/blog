@@ -13,10 +13,10 @@
 
 <header>
     <div class="nav-bar">
-        <a href="#">main</a>
-        <a href="#">about</a>
-        <input class="search-input" type="text" placeholder="Search blog..">
-        <a href="#">search</a>
+        <a class="main-btn" href="#">main</a>
+        <a class="about-btn" href="#">about</a>
+        <input class="search-input" type="text" placeholder="Search blog...">
+        <a class="search-btn" href="#">search</a>
     </div>
 </header>
 
