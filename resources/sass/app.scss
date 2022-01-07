@@ -66,27 +66,18 @@ header {
             display: none;
         }
     }
+
+    .logo {
+        width: 100%;
+        color: white;
+        height: 100px;
+    }
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    .latest-blog-indigator {
-        background-color: white;
-        width: 150px;
-        height: 30px;
-        position: absolute;
-        margin-top: -30px;
-        margin-left: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        border-radius: 10px 10px 0 0;
-        text-transform: capitalize;
-    }
 
     .blog-container {
         display: grid;
@@ -97,6 +88,7 @@ main {
         align-items: stretch;
         padding: 10px;
         margin-top: 5%;
+        margin-bottom: 50px;
         @media screen and (max-width: 1050px) {
             display: grid;
             grid-template-columns: 50% 50%;

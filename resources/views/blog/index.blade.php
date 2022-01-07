@@ -19,11 +19,14 @@
         <a class="search-btn" href="#">search</a>
         <a class="dropdown-btn" href="#"></a>
     </div>
+
+    <div class="logo">
+        techno blog
+    </div>
 </header>
 
 <main>
     <div class="blog-container">
-
         <div class="blog">
             <img class="blog-img" src="img/blog-example-img/blog1.jpg">
             <h2 class="blog-title">blog 1 title about technology</h2>
