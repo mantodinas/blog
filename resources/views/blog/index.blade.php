@@ -12,18 +12,11 @@
 <body>
 
 <header>
-    <div class="nav-bar-container">
-        <div class="nav-bar">
-            <div class="nav-bar-top">
-                <h1>techno blog</h1>
-            </div>
-
-            <div class="nav-bar-bottom">
-                <a href="#">main</a>
-                <a href="#">about</a>
-                <input class="search" type="text" placeholder="Search blog..">
-            </div>
-        </div>
+    <div class="nav-bar">
+        <a href="#">main</a>
+        <a href="#">about</a>
+        <input class="search-input" type="text" placeholder="Search blog..">
+        <a href="#">search</a>
     </div>
 </header>
 

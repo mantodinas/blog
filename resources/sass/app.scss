@@ -2,60 +2,42 @@
 body {
     padding: 0;
     margin: 0; 
+    //scrollbar removed start
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    //scrollbar removed end
 }
 
+
 header {
-    .nav-bar-container{
-        .nav-bar {
-                background-color: white;
-                height: 140px;
-            }
+    .nav-bar {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 45px;
 
-            .nav-bar-top {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                height: 70%;
-
-                h1 {
-                    align-self: center;
-                    text-transform: capitalize;
-                    font-size: 60px;
-                    color: blue;
-                    position: relative;
-                    right: 7%;
-                }
-            }
-
-            .nav-bar-bottom {
-                height: 30%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-end;
-
-                a {
-                    display: flex;
-                    justify-content: center;
-                    text-transform: capitalize;
-                    text-decoration: none;
-                    color: black;
-                    padding: 10px;
-                    background-color: gray;
-                    &:hover {
-                        background-color: rgb(68, 68, 68);
-                    }
-                }
-    
-                .search {
-                    text-transform: capitalize;
-                    border-bottom: 1px solid grey;
-                    padding: 10px;
-                    border: none;
-                }
-            }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            text-decoration: none;
+            padding: 5px 10px 5px 10px;
+            height: 35px;
+            background-color: grey;
         }
+
+        input[type-text] {
+            border: 3px solid red;
+        }
+
     }
+}
 
 main {
     display: flex;
@@ -67,7 +49,7 @@ main {
     align-items: center;
     
     .latest-blog-indigator {
-        background-color: blue;
+        background-color: white;
         width: 150px;
         height: 30px;
         position: absolute;
@@ -76,7 +58,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: black;
         border-radius: 10px 10px 0 0;
         text-transform: capitalize;
     }
