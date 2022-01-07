@@ -2,6 +2,11 @@
 body {
     padding: 0;
     margin: 0; 
+
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     //scrollbar removed start
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -66,10 +71,6 @@ header {
 main {
     display: flex;
     justify-content: center;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     align-items: center;
     
     .latest-blog-indigator {
@@ -105,6 +106,7 @@ main {
         @media screen and (max-width: 760px) {
             display: grid;
             grid-template-columns: 100%;
+            padding: 10px;
         }
 
 
