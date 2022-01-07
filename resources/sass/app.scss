@@ -20,6 +20,21 @@ header {
         flex-direction: row;
         justify-content: center;
         height: 45px;
+        @media screen and (max-width: 480px) {
+            a {
+                display: none;
+            }
+
+            .dropdown-btn {
+                display: block;
+                border-radius: 10px;
+                background-color: grey;
+            }
+
+            input {
+                display: none;
+            }
+        }
 
         a {
             display: flex;
@@ -42,6 +57,9 @@ header {
             }
         }
 
+        .dropdown-btn {
+            display: none;
+        }
     }
 }
 
@@ -76,8 +94,19 @@ main {
         grid-row-gap: 20px;
         justify-items: stretch;
         align-items: stretch;
-        padding: 20px 10px 20px 10px;
+        padding: 10px;
         margin-top: 5%;
+        @media screen and (max-width: 1050px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 760px) {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
 
         .blog {
             background-color: white;

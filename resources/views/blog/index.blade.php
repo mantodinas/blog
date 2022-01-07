@@ -17,6 +17,7 @@
         <a class="about-btn" href="#">about</a>
         <input class="search-input" type="text" placeholder="Search blog...">
         <a class="search-btn" href="#">search</a>
+        <a class="dropdown-btn" href="#"></a>
     </div>
 </header>
 
@@ -24,8 +25,6 @@
     <div class="blog-container">
 
         <div class="blog">
-            <div class="latest-blog-indigator">latest blog</div>
-            
             <img class="blog-img" src="img/blog-example-img/blog1.jpg">
             <h2 class="blog-title">blog 1 title about technology</h2>
             <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
