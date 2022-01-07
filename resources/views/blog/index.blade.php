@@ -15,7 +15,6 @@
     <div class="nav-bar-container">
         <div class="nav-bar">
             <div class="nav-bar-top">
-                <img src="img/techno-blog2.png">
                 <h1>techno blog</h1>
             </div>
 
@@ -32,7 +31,7 @@
     <div class="blog-container">
 
         <div class="blog">
-            <div class="latest-blog-indigator"></div>
+            <div class="latest-blog-indigator">latest blog</div>
             
             <img class="blog-img" src="img/blog-example-img/blog1.jpg">
             <h2 class="blog-title">blog 1 title about technology</h2>

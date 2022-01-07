@@ -1,5 +1,3 @@
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/<type>';
 
 body {
     padding: 0;
@@ -9,36 +7,21 @@ body {
 header {
     .nav-bar-container{
         .nav-bar {
-            background-size: 100%;
-            background-attachment: fixed;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: rgb(88, 88, 88);
+                background-color: white;
+                height: 140px;
+            }
 
-            
             .nav-bar-top {
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 height: 70%;
 
-                img {
-                    display: flex;
-                    align-self: flex-start;
-                    width: 13%;
-                    padding: 20px 0 0 0;
-                    position: relative;
-                    right: 8%;
-                }
-
                 h1 {
                     align-self: center;
                     text-transform: capitalize;
                     font-size: 60px;
                     color: blue;
-                    -webkit-text-stroke: 0.3px white;
                     position: relative;
                     right: 7%;
                 }
@@ -56,10 +39,11 @@ header {
                     justify-content: center;
                     text-transform: capitalize;
                     text-decoration: none;
-                    color: white;
+                    color: black;
                     padding: 10px;
+                    background-color: gray;
                     &:hover {
-                        background-color: gray;
+                        background-color: rgb(68, 68, 68);
                     }
                 }
     
@@ -72,12 +56,11 @@ header {
             }
         }
     }
-}
 
 main {
     display: flex;
     justify-content: center;
-    background-image: url("img/background.jpg");
+    background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -134,12 +117,7 @@ main {
 }
 
 footer {
-    //navbar background gradient animation start
-    background: linear-gradient(300deg, #4C4CDA, #1a1d7a ,#343bc9,#1a1d7a ,#343bc9);
-    background-size: 240% 240%;
-    animation: gradient-animation 12s ease-out;
-    //navbar background gradient animation
-    padding: 20px 0 20px 0;
+    background-color: white;
 
     .footer-container {
         display: flex;
@@ -160,16 +138,16 @@ footer {
                     height: 50px;
                     width: 50px;
                     &:hover {
-                        background-color: white;
+                        background-color: black;
                         i {
-                            color: black;
+                            color: white;
                         }
                     }
                     
                     a {
                         i {
                             font-size: 25px;
-                            color: white;
+                            color: black;
                         }
                    }
 
@@ -179,7 +157,7 @@ footer {
         .footer-bottom {
             p {
                 text-align: center;
-                color: white;
+                color: black;
             }
         }
     }
