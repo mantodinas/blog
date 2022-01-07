@@ -20,8 +20,10 @@
         <a class="dropdown-btn" href="#"></a>
     </div>
 
-    <div class="logo">
-        techno blog
+    <div class="logo-container">
+        <div class="logo">
+            techno blog
+        </div>
     </div>
 </header>
 

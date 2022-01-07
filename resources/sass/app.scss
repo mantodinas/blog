@@ -67,10 +67,17 @@ header {
         }
     }
 
-    .logo {
-        width: 100%;
-        color: white;
-        height: 100px;
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        .logo {
+            width: 1000px;
+            color: black;
+            height: 100px;
+            background-color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
     }
 }
 
@@ -134,12 +141,14 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: 10px;
+        width: 100%;
 
         .footer-top {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 10px;
+            gap: 5px;
             
             .social-networks {
                     display: flex;
@@ -169,6 +178,7 @@ footer {
             p {
                 text-align: center;
                 color: black;
+                padding: 10px;
             }
         }
     }
