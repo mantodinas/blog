@@ -85,27 +85,27 @@
 <footer>
     <div class="footer-container" id="about">
         <div class="footer-top">
-            <div class="tooltip" data-tooltip="instagram">
+            <div class="social-networks">
                 <a href="https://www.instagram.com/m.petrauskas/">
-                    <img src="#">
+                    <i class="fa fa-instagram fa-lg"></i>
                 </a>
             </div>
 
-            <div class="tooltip" data-tooltip="twitter">
+            <div class="social-networks">
                 <a href="https://twitter.com/Mantodinas">
-                    <img src="#">
+                    <i class="fa fa-twitter"></i>
                 </a>
             </div>
 
-            <div class="tooltip" data-tooltip="linkedin">
+            <div class="social-networks">
                 <a href="https://www.linkedin.com/in/mantas-petrauskas-56781b142/">
-                    <img src="#">
+                    <i class="fa fa-linkedin"></i>
                 </a>
             </div>
 
-            <div class="tooltip" data-tooltip="github">
+            <div class="social-networks">
                 <a href="https://github.com/mantodinas">
-                    <img src="#">
+                    <i class="fa fa-github"></i>
                 </a>
             </div>
         </div>
