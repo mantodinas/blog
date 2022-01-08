@@ -28,54 +28,15 @@
 
 <main>
     <div class="blog-container">
+        @foreach ($posts as $post)
         <div class="blog">
             <img class="blog-img" src="img/blog-example-img/blog1.jpg">
-            <h2 class="blog-title">blog 1 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
+            <h2 class="blog-title">{{ $post->title }}</h2>
+            <p class="short-description">{{ $post->description }}</p>
+            <p class="day-added">{{ $post->created_at->format('Y m d') }}</p>
         </div>
+         @endforeach
 
-        <div class="blog">
-            <img class="blog-img" src="img/blog-example-img/blog2.jpg">
-            <h2 class="blog-title">blog 2 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
-        </div>
-
-        <div class="blog">
-            <img class="blog-img" src="img/blog-example-img/blog3.jpg">
-            <h2 class="blog-title">blog 3 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
-        </div>
-
-        <div class="blog">
-            <img class="blog-img" src="img/blog-example-img/blog4.jpg">
-            <h2 class="blog-title">blog 4 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
-        </div>
-
-        <div class="blog">
-            <img class="blog-img" src="img/blog-example-img/blog5.jpg">
-            <h2 class="blog-title">blog 5 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
-        </div>
-
-        <div class="blog">
-            <img class="blog-img" src="img/blog-example-img/blog6.jpg">
-            <h2 class="blog-title">blog 6 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
-        </div>
-
-        <div class="blog">
-            <img class="blog-img" src="img/blog-example-img/blog7.jpg">
-            <h2 class="blog-title">blog 7 title about technology</h2>
-            <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
-            <p class="day-added">2022 01 01</p>
-        </div>
     </div>
 </main>
 
