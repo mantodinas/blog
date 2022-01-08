@@ -17,3 +17,4 @@ mix.js('resources/js/app.js', 'public/js');
 mix.options({
     processCssUrls: false
 });
+mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts');

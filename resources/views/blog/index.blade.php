@@ -7,8 +7,6 @@
 <style>
 </style>
 <script src="{{ asset('js/app.js') }}"></script>
-<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-<script src="https://kit.fontawesome.com/5194a01915.js" crossorigin="anonymous"></script>
 <body>
 
 <header>
@@ -86,25 +84,25 @@
         <div class="footer-top">
             <div class="social-networks">
                 <a href="https://www.instagram.com/m.petrauskas/">
-                    <i class="fa fa-instagram fa-lg"></i>
+                    <i class="fab fa-instagram fa-lg"></i>
                 </a>
             </div>
 
             <div class="social-networks">
                 <a href="https://twitter.com/Mantodinas">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
 
             <div class="social-networks">
                 <a href="https://www.linkedin.com/in/mantas-petrauskas-56781b142/">
-                    <i class="fa fa-linkedin"></i>
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
 
             <div class="social-networks">
                 <a href="https://github.com/mantodinas">
-                    <i class="fa fa-github"></i>
+                    <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
