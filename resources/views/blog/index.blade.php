@@ -7,31 +7,30 @@
 <style>
 </style>
 <script src="{{ asset('js/app.js') }}"></script>
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+<script src="https://kit.fontawesome.com/5194a01915.js" crossorigin="anonymous"></script>
 <body>
 
 <header>
-    <div class="nav-bar-container">
-        <div class="nav-bar">
-            <div class="nav-bar-top">
-                <img src="img/techno-blog2.png">
-                <h1>techno blog</h1>
-            </div>
+    <div class="nav-bar">
+        <a class="main-btn" href="#">main</a>
+        <a class="about-btn" href="#">about</a>
+        <input class="search-input" type="text" placeholder="Search blog...">
+        <a class="search-btn" href="#">search</a>
+        <a class="dropdown-btn" href="#"></a>
+    </div>
 
-            <div class="nav-bar-bottom">
-                <a href="#">main</a>
-                <a href="#">about</a>
-                <input class="search" type="text" placeholder="Search blog..">
-            </div>
+    <div class="logo-container">
+        <div class="logo">
+            <h1 class="text1">techno</h1>
+            <h1 class="text2">blog</h1>
         </div>
     </div>
 </header>
 
 <main>
     <div class="blog-container">
-
         <div class="blog">
-            <div class="latest-blog-indigator"></div>
-            
             <img class="blog-img" src="img/blog-example-img/blog1.jpg">
             <h2 class="blog-title">blog 1 title about technology</h2>
             <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias beatae deserunt delectus cum earum illum doloremque praesentium. Ipsa quae tempore quos beatae vitae, odio doloremque ipsam minima accusantium quam!</p>
@@ -85,27 +84,27 @@
 <footer>
     <div class="footer-container" id="about">
         <div class="footer-top">
-            <div class="tooltip" data-tooltip="instagram">
+            <div class="social-networks">
                 <a href="https://www.instagram.com/m.petrauskas/">
-                    <img src="#">
+                    <i class="fa fa-instagram fa-lg"></i>
                 </a>
             </div>
 
-            <div class="tooltip" data-tooltip="twitter">
+            <div class="social-networks">
                 <a href="https://twitter.com/Mantodinas">
-                    <img src="#">
+                    <i class="fa fa-twitter"></i>
                 </a>
             </div>
 
-            <div class="tooltip" data-tooltip="linkedin">
+            <div class="social-networks">
                 <a href="https://www.linkedin.com/in/mantas-petrauskas-56781b142/">
-                    <img src="#">
+                    <i class="fa fa-linkedin"></i>
                 </a>
             </div>
 
-            <div class="tooltip" data-tooltip="github">
+            <div class="social-networks">
                 <a href="https://github.com/mantodinas">
-                    <img src="#">
+                    <i class="fa fa-github"></i>
                 </a>
             </div>
         </div>
