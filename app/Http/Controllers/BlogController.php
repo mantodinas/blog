@@ -42,7 +42,8 @@ class BlogController extends BaseController
     {
         $post->title = $request->title;
         $post->description = $request->description;
-        $post->imageLink = $request->image;
+        $image = $request->image->store('images');
+        $post->imageLink = 'storage/' . $image;
         $post->link = $request->link;
         $post->content = $request->content;
     }

@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="create-blog">
-    <form class="create-container" action="" method="POST">
+    <form class="create-container" action="" method="POST" enctype="multipart/form-data">
         <div class="create">
             <div class="add-img">
-                img <input type="text" name="image" placeholder="img...">
+                img <input type="file" name="image" accept="image/*">
             </div>
     
             <div class="link">
