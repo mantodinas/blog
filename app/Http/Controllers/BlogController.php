@@ -38,6 +38,13 @@ class BlogController extends BaseController
         return redirect()->route('post.create');
     }
 
+    public function destroy(Post $post)
+    {
+        $post->delete();
+
+        return redirect()->route('post.index');
+    }
+
     private function setPostModelParams(Post $post, Request $request): void
     {
         $post->title = $request->title;
