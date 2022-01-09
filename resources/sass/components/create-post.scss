@@ -1,0 +1,34 @@
+.create-blog {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .create-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1024px;
+        min-height: 400px;
+        background-color: white;
+
+        .create {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-transform: capitalize;
+            .add-img {
+                
+            }
+    
+            .add-title {
+    
+            }
+    
+            .add-content {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    }
+}

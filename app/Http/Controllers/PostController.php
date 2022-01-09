@@ -52,8 +52,8 @@ class PostController extends Controller
     {
         $post->title = $request->title;
         $post->description = $request->description;
-        $post->imageLink = $request->imageLink;
+        $post->imageLink = $request->image;
         $post->link = $request->link;
-        $post->content = $request->htmlContent;
+        $post->content = $request->content;
     }
 }

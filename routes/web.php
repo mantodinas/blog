@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',  [BlogController::class, 'index']);
+Route::get('/post', [BlogController::class, 'create'])->name('post.create');
 Route::get('/post/{post:link}', [BlogController::class, 'show'])->name('post.show');
-Route::post('/post', [PostController::class, 'store']);
+Route::post('/post', [BlogController::class, 'store'])->name('post.store');
 Route::patch('/post/{post:link}', [PostController::class, 'update']);
 Route::delete('/post/{post:link}', [PostController::class, 'destroy']);
