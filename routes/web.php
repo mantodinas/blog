@@ -23,4 +23,5 @@ Route::post('/post', [BlogController::class, 'store'])->name('post.store');
 Route::patch('/post/{post:link}', [PostController::class, 'update']);
 Route::delete('/post/{post:link}', [BlogController::class, 'destroy'])->name('post.destroy');
 Route::get('/login', [LoginController::class, 'show'])->name('login.show');
-
+Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
