@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::get('/post/{post:link}', [BlogController::class, 'show'])->name('post.sho
 Route::post('/post', [BlogController::class, 'store'])->name('post.store');
 Route::patch('/post/{post:link}', [PostController::class, 'update']);
 Route::delete('/post/{post:link}', [BlogController::class, 'destroy'])->name('post.destroy');
+Route::get('/login', [LoginController::class, 'show'])->name('login.show');
+

@@ -10,10 +10,10 @@
             <input type="text" name="link" placeholder="link...">
             <label>title</label>
             <input type="text" name="title" placeholder="title...">
-            <label>text content</label>
-            <textarea name="content" cols="30" rows="5"></textarea>
             <label>short description</label>
             <textarea name="description" cols="30" rows="5"></textarea>
+            <label>text content</label>
+            <textarea name="content" cols="30" rows="5"></textarea>
             <button>submit</button>
     </form>
 </div>
