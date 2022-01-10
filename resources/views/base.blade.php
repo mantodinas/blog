@@ -13,6 +13,9 @@
     <div class="nav-bar">
         <a class="main-btn" href="#">main</a>
         <a class="about-btn" href="#">about</a>
+        @auth
+        <a class="logout" href="{{ route('logout') }}">logout</a>
+        @endauth
         <input class="search-input" type="text" placeholder="Search blog...">
         <a class="search-btn" href="#">search</a>
         <a class="dropdown-btn" href="#"></a>
