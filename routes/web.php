@@ -17,7 +17,7 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/',  [BlogController::class, 'index'])->name('post.index');
-Route::get('/post', [BlogController::class, 'create'])->name('post.create')->middleware('auth');
+Route::get('/create', [BlogController::class, 'create'])->name('post.create')->middleware('auth');
 Route::get('/post/{post:link}', [BlogController::class, 'show'])->name('post.show');
 Route::post('/post', [BlogController::class, 'store'])->name('post.store');
 Route::patch('/post/{post:link}', [PostController::class, 'update']);
