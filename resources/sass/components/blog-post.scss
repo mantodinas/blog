@@ -7,11 +7,11 @@
         width: 1050px;
         min-height: 200px;
         background-color: white;
-        padding: 10px;
-        background-color: white;
 
         .image {
-
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
 
         .title {
@@ -21,7 +21,7 @@
         }
 
         .content {
-
+            padding: 10px;
         }
 
         .blog-bottom {
