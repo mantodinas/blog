@@ -1,8 +1,78 @@
-.blog-to-container {
-    width: 1050px;
-    height: 400px;
-    margin: 0 0 50px 0;
-    background-color: white;
+.blog-page-container {
     display: flex;
     justify-content: center;
+    margin: 0 0 50px 0;
+    
+    .blog-page {
+        width: 1050px;
+        min-height: 200px;
+        background-color: white;
+
+        .image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            text-transform: capitalize;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .blog-bottom {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            flex-direction: row;
+            width: 1050px;
+    
+            .day-created-container {
+                padding: 0 10px 0 0;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                .day-created {
+                }
+            }
+            
+            .btn-container {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 0 0 0 10px;
+                column-gap: 10px;
+
+                .btn {
+                    width: 70px;
+                    height: 30px;
+                    border: none;
+                    background-color: black;
+                    color: white;
+                    text-transform: capitalize;
+                    &:hover {
+                        background-color: rgb(56, 56, 56);
+                        font-weight: bold;
+                    }
+                }
+
+                button {
+                    background-color: black;
+                    color: white;
+                    width: 70px;
+                    height: 30px;
+                    border: none;
+                    text-transform: capitalize;
+                    &:hover {
+                        background-color: rgb(56, 56, 56);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }

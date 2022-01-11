@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',  [BlogController::class, 'index']);
+Route::get('/',  [BlogController::class, 'index'])->name('post.index');
+Route::get('/create', [BlogController::class, 'create'])->name('post.create')->middleware('auth');
 Route::get('/post/{post:link}', [BlogController::class, 'show'])->name('post.show');
-Route::post('/post', [PostController::class, 'store']);
+Route::post('/post', [BlogController::class, 'store'])->name('post.store');
 Route::patch('/post/{post:link}', [PostController::class, 'update']);
-Route::delete('/post/{post:link}', [PostController::class, 'destroy']);
+Route::delete('/post/{post:link}', [BlogController::class, 'destroy'])->name('post.destroy');
+Route::get('/login', [LoginController::class, 'show'])->name('login.show');
+Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');

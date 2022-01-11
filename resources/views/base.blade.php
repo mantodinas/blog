@@ -15,6 +15,10 @@
         <a class="about-btn" href="#">about</a>
         <input class="search-input" type="text" placeholder="Search blog...">
         <a class="search-btn" href="#">search</a>
+        @auth
+        <a class="create-blog" href="{{ route('post.create') }}">create post</a>
+        <a class="logout" href="{{ route('logout') }}">logout</a>
+        @endauth
         <a class="dropdown-btn" href="#"></a>
     </div>
 

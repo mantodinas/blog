@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Post;
 use Illuminate\View\View;
+use Illuminate\Http\Request;
 
 class BlogController extends BaseController
 {
@@ -21,5 +22,36 @@ class BlogController extends BaseController
     public function show(Post $post): View
     {
         return view('blog.show', ['post' => $post]);
+    }
+
+    public function create(): View
+    {
+        return view('blog.create');
+    }
+
+    public function store(Request $request)
+    {
+        $post = new Post();
+        $this->setPostModelParams($post, $request);
+        $post->save();
+
+        return redirect()->route('post.create');
+    }
+
+    public function destroy(Post $post)
+    {
+        $post->delete();
+
+        return redirect()->route('post.index');
+    }
+
+    private function setPostModelParams(Post $post, Request $request): void
+    {
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $image = $request->image->store('images');
+        $post->imageLink = 'storage/' . $image;
+        $post->link = $request->link;
+        $post->content = $request->content;
     }
 }
