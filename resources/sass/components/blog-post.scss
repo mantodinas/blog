@@ -25,6 +25,7 @@
         }
 
         .blog-bottom {
+            margin: 0;
             display: grid;
             grid-template-columns: 50% 50%;
             flex-direction: row;
@@ -34,38 +35,48 @@
             padding-bottom: 10px;
     
             .day-created-container {
-                padding: 0 10px 0 0;
+                margin: 0 !important;
                 display: flex;
                 justify-content: end;
                 align-items: flex-end;
+                margin: 0;
+                width: 50%;
+                padding: 0 10px 0 0;
+                display: flex;
 
                 .day-created {
                     display: flex;
                     align-items: center;
                     padding: 0 10px 0 10px;
                     height: 30px;
-                    background-color: black;
-                    color: white;
+                    color: black;
                 }
             }
             
-            .btn-container {
+            form {
                 display: flex;
-                justify-content: center;
+                justify-content: start;
                 align-items: flex-end;
-                padding:0 0 0 10px;
-                column-gap: 10px;
+                width: 50%;
 
-                .btn {
-                    width: 70px;
-                    height: 30px;
-                    border: none;
-                    background-color: black;
-                    color: white;
-                    text-transform: capitalize;
-                    &:hover {
-                        background-color: rgb(56, 56, 56);
-                        font-weight: bold;
+                .btn-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding:0 0 0 10px;
+                    column-gap: 10px;
+    
+                    .btn {
+                        width: 70px;
+                        height: 30px;
+                        border: none;
+                        background-color: black;
+                        color: white;
+                        text-transform: capitalize;
+                        &:hover {
+                            background-color: rgb(56, 56, 56);
+                            font-weight: bold;
+                        }
                     }
                 }
             }
