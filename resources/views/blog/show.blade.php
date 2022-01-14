@@ -10,17 +10,19 @@
         <div class="blog-bottom">
             @auth
             <form action="{{ route('post.destroy', $post->link) }}" method="POST">
-                    <div class="btn-container">
-                        <input type="hidden" name="_method" value="delete" />
-                        <input class="btn" type="submit" value="delete">
-                    </div>
+                <div class="btn-container">
+                    <input type="hidden" name="_method" value="edit"/>
+                    <input class="btn" type="submit" value="edit">
+
+                    <input type="hidden" name="_method" value="delete"/>
+                    <input class="btn" type="submit" value="delete">
+                </div>
             </form>
             @endauth
             <div class="day-created-container">
-                <p class="day-created">{{ $post->created_at->format('Y m d') }}</p>
+                <div class="day-created">{{ $post->created_at->format('Y m d') }}</div>
             </div>
         </div>
     </div>
 </div>
-
 @endsection
