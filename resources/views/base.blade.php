@@ -19,7 +19,10 @@
         <a class="create-blog" href="{{ route('post.create') }}">create post</a>
         <a class="logout" href="{{ route('logout') }}">logout</a>
         @endauth
-        <a class="dropdown-btn" href="#"></a>
+        <button class="dropdown-btn"></button>
+        <div class="navbar-dropdown">
+            <a class="dropdown-btn" href="#"></a>
+        </div>
     </div>
 
     <div class="logo-container">
