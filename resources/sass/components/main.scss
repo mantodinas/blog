@@ -6,7 +6,7 @@ main {
         display: grid;
         grid-template-columns: 500px 500px;
         grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-row-gap: 5px;
         justify-items: stretch;
         align-items: stretch;
         padding: 10px;
@@ -23,26 +23,31 @@ main {
             float: right;
         }
 
-        .blog {
-            background-color: white;
+        .link-wrap {
+            text-decoration: none;
+            color: black;
 
-            .blog-img {
-                width: 100%;
-            }
-            
-            .blog-title {
-                text-align: center;
-                text-transform: capitalize;
-            }
-
-            .short-description {
-                padding: 0 10px 0 10px;
-            }
-
-            .day-added {
-                display: flex;
-                justify-content: right;
-                padding: 0 20px 0 20px;
+            .blog {
+                background-color: white;
+    
+                .blog-img {
+                    width: 100%;
+                }
+                
+                .blog-title {
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+    
+                .short-description {
+                    padding: 0 10px 0 10px;
+                }
+    
+                .day-added {
+                    display: flex;
+                    justify-content: right;
+                    padding: 0 20px 10px 20px;
+                }
             }
         }
     }
