@@ -6,21 +6,6 @@ header {
         justify-content: center;
         width: 100%;
         height: 45px;
-        @media screen and (max-width: 480px) {
-            a {
-                display: none;
-            }
-
-            .dropdown-btn {
-                display: block;
-                border-radius: 10px;
-                background-color: grey;
-            }
-
-            input {
-                display: none;
-            }
-        }
 
         a {
             display: flex;
@@ -36,6 +21,9 @@ header {
                 background-color: black;
                 color: white;
             }
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
         }
 
         input {
@@ -47,10 +35,27 @@ header {
                 background-color: rgb(236, 235, 235);
                 outline: none;//removes mouse clicked line
             }
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
         }
 
         .dropdown-btn {
             display: none;
+            @media screen and (max-width: 700px) {
+                display: block;
+                border: none;
+                border-radius: 5px;
+                width: 45px;
+                height: 45px;
+                background-color: black;
+            }
+        }
+
+        .navbar-dropdown {
+            display: none;
+            @media screen and (max-width: 700px) {
+            }
         }
     }
 

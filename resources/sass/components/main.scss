@@ -12,17 +12,16 @@ main {
         padding: 10px;
         margin-bottom: 50px;
         @media screen and (max-width: 1050px) {
+            grid-template-columns: 48.5% 48.5%;
             display: grid;
             float: right;
-            grid-template-columns: 48.8% 48.5%;
         }
 
         @media screen and (max-width: 760px) {
-            display: grid;
             grid-template-columns: 100%;
-            padding: 10px;
+            display: grid;
+            float: right;
         }
-
 
         .blog {
             background-color: white;
