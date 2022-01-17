@@ -11,5 +11,4 @@
             <button>login</button>
         </form>
     </div>
-
 @endsection
