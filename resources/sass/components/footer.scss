@@ -1,10 +1,17 @@
+body{
+    min-height: 100vh;//footer stick to bottom 1
+    display: flex;//footer stick to bottom 2
+    flex-direction: column;//footer stick to bottom 3
+}
+
 footer {
     background-color: white;
+    min-height: 200px;//footer stick to bottom 4
+    margin-top: auto;//footer stick to bottom 5
 
     .footer-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         padding-top: 10px;
         width: 100%;
 
@@ -13,6 +20,9 @@ footer {
             flex-direction: row;
             justify-content: center;
             gap: 5px;
+            @media screen and (max-width: 255px) {
+                gap: 0;
+            }
             
             .social-networks {
                     display: flex;
@@ -39,6 +49,7 @@ footer {
         }
 
         .footer-bottom {
+            
             p {
                 text-align: center;
                 color: black;
