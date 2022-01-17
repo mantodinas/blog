@@ -4,6 +4,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AboutController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::delete('/post/{post:link}', [BlogController::class, 'destroy'])->name('po
 Route::get('/login', [LoginController::class, 'show'])->name('login.show');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/about', [AboutController::class, 'about'])->name('about');
