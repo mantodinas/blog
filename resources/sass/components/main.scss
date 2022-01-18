@@ -26,9 +26,14 @@ main {
         .link-wrap {
             text-decoration: none;
             color: black;
-
+            
             .blog {
                 background-color: white;
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                    border: 1px solid black;
+                }
     
                 .blog-img {
                     width: 100%;

@@ -20,7 +20,24 @@
             align-self: center;
             text-transform: capitalize;
         }
-        
+
+        input[type=file] {
+            border: none;
+        }
+
+        input[type=file]::file-selector-button {
+            padding: 3px 10px 3px 10px;
+            width: 100px;
+            background-color: black;
+            color: #FFFFFF;
+            outline: none;
+            border: none;
+            &:hover {
+                background-color: #383838;
+                font-weight: bold;
+            }
+        }
+
         label {
             display: flex;
             align-items: flex-start;
@@ -28,14 +45,16 @@
         }
         
         input {
-            width: 97%;
-            padding-right: 2%;
+            width: 98%;
+            padding-right: 1.5%;
+            border: 1px solid #949494;
             outline: none;
         }
 
         textarea {
             width: 98%;
             padding-right: 1.5%;
+            border: 1px solid #949494;
             outline: none;
             resize: vertical;
         }
@@ -50,7 +69,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
             &:hover {
-                background-color: rgb(56, 56, 56);
+                background-color: #383838;
                 font-weight: bold;
             }
         }
