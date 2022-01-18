@@ -1,11 +1,13 @@
-body{
+$background-color: #FFFFFF;
+
+body {
     min-height: 100vh;//footer stick to bottom 1
     display: flex;//footer stick to bottom 2
     flex-direction: column;//footer stick to bottom 3
 }
 
 footer {
-    background-color: white;
+    background-color: $background-color;
     min-height: 200px;//footer stick to bottom 4
     margin-top: auto;//footer stick to bottom 5
 

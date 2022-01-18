@@ -1,6 +1,8 @@
+$background-color: #FFFFFF;
+
 header {
     .nav-bar {
-        background-color: white;
+        background-color: $background-color;
         display: flex;
         flex-direction: row;
         justify-content: center;
