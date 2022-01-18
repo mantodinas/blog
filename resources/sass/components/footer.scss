@@ -5,7 +5,7 @@ body {
 }
 
 footer {
-    background-color: white;
+    background-color: #ffffff;
     min-height: 200px;//footer stick to bottom 4
     margin-top: auto;//footer stick to bottom 5
 
@@ -32,16 +32,16 @@ footer {
                     height: 50px;
                     width: 50px;
                     &:hover {
-                        background-color: black;
+                        background-color: #000000;
                         i {
-                            color: white;
+                            color: #ffffff;
                         }
                     }
                     
                     a {
                         i {
                             font-size: 25px;
-                            color: black;
+                            color: #000000;
                         }
                    }
 
@@ -52,7 +52,7 @@ footer {
             
             p {
                 text-align: center;
-                color: black;
+                color: #000000;
                 padding: 10px;
             }
         }

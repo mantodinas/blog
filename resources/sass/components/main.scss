@@ -28,11 +28,11 @@ main {
             color: black;
             
             .blog {
-                background-color: white;
+                background-color: #ffffff;
                 &:hover {
                     transition: 0.5s;
                     transform: scale(1.1);
-                    border: 1px solid black;
+                    border: 1px solid #000000;
                 }
     
                 .blog-img {

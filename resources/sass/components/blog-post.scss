@@ -13,7 +13,7 @@
     .blog-page {
         width: 1050px;
         min-height: 200px;
-        background-color: white;
+        background-color: #ffffff;
         @media screen and (max-width: 1050px) {
             width: 100%;
         }
@@ -69,7 +69,7 @@
                     align-items: center;
                     padding: 0 10px 0 10px;
                     height: 30px;
-                    color: black;
+                    color: #000000;
                 }
             }
             
@@ -91,10 +91,10 @@
                         height: 30px;
                         border: none;
                         background-color: black;
-                        color: white;
+                        color: #ffffff;
                         text-transform: capitalize;
                         &:hover {
-                            background-color: rgb(56, 56, 56);
+                            background-color: #383838;
                             font-weight: bold;
                             transition: 0.5s;
                             transform: scale(1.1);

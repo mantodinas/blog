@@ -8,7 +8,7 @@
     .login {
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: #ffffff;
         width: 90%;
         padding: 0 20px 0 20px;
         row-gap: 10px;
@@ -33,13 +33,13 @@
         button {
             width: 100%;
             text-transform: capitalize;
-            background-color: black;
-            color: white;
+            background-color: #000000;
+            color: #ffffff;
             border: none;
             height: 35px;
             margin-top: 10px;
             &:hover {
-                background-color: rgb(56, 56, 56);
+                background-color: #383838;
                 font-weight: bold;
             }
         }
