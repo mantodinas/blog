@@ -1,3 +1,5 @@
+$background-color: #FFFFFF;
+
 .container-login {
     display: flex;
     justify-content: center;
@@ -8,7 +10,7 @@
     .login {
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: $background-color;
         width: 90%;
         padding: 0 20px 0 20px;
         row-gap: 10px;

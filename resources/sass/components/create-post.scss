@@ -1,3 +1,5 @@
+$background-color: #FFFFFF;
+
 .create-blog-container {
     width: 600px;
     min-height: 580px;
@@ -12,7 +14,7 @@
         flex-direction: column;
         width: 100%;
         padding: 0 20px 0 20px;
-        background-color: white;
+        background-color: $background-color;
         row-gap: 10px;
         
         h2 {
