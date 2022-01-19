@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="create-blog-container">
-    <form class="create-blog" action="" method="POST" enctype="multipart/form-data">
+    <form class="create-blog" action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data">
         <h2>create blog</h2>
         <label>image</label>
         <input type="file" name="image" accept="image/*">
