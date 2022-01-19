@@ -11,7 +11,7 @@
 
 <header>
     <div class="nav-bar">
-        <a class="main-btn" href="#">main</a>
+        <a class="main-btn" href="{{ route('post.index') }}">main</a>
         <a class="about-btn" href="{{ route('about') }}">about</a>
         <input class="search-input" type="text" placeholder="Search blog...">
         <a class="search-btn" href="#">search</a>
