@@ -16,10 +16,10 @@ header {
             padding: 5px 20px 5px 20px;
             height: 35px;
             background-color: #b3b3b3;
-            color: $text-color;
+            color: #000000;
             &:hover {
                 background-color: #000000;
-                color: $white;
+                color: #FFFFFF;
             }
             @media screen and (max-width: 700px) {
                 display: none;
