@@ -38,6 +38,19 @@ class BlogController extends BaseController
         return redirect()->route('post.create');
     }
 
+    public function edit(Post $post): View
+    {
+        return view('blog.edit', ['post' => $post]);
+    }
+
+    public function update(Request $request, Post $post)
+    {
+        $this->setPostModelParams($post, $request);
+        $post->update();
+
+        return redirect()->route('post.index');
+    }
+
     public function destroy(Post $post)
     {
         $post->delete();
@@ -49,8 +62,10 @@ class BlogController extends BaseController
     {
         $post->title = $request->title;
         $post->description = $request->description;
-        $image = $request->image->store('images');
-        $post->imageLink = 'storage/' . $image;
+        if ($request->hasFile('image')) {
+            $image = $request->image->store('images');
+            $post->imageLink = 'storage/' . $image;
+        }
         $post->link = $request->link;
         $post->content = $request->content;
     }
