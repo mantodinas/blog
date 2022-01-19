@@ -14,9 +14,12 @@ class BlogController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index(): View
+    public function index(Request $request): View
     {
-        return view('blog.index', ['posts' => Post::all()]);
+        $search = $request->get('search');
+        $posts = empty($search) ? Post::all() : Post::where('title', 'like', '%'.$search.'%')->get();
+        
+        return view('blog.index', ['posts' => $posts ]);
     }
 
     public function show(Post $post): View
@@ -35,7 +38,20 @@ class BlogController extends BaseController
         $this->setPostModelParams($post, $request);
         $post->save();
 
-        return redirect()->route('post.create');
+        return redirect()->route('post.index');
+    }
+
+    public function edit(Post $post): View
+    {
+        return view('blog.edit', ['post' => $post]);
+    }
+
+    public function update(Request $request, Post $post)
+    {
+        $this->setPostModelParams($post, $request);
+        $post->update();
+
+        return redirect()->route('post.index');
     }
 
     public function destroy(Post $post)
@@ -49,8 +65,10 @@ class BlogController extends BaseController
     {
         $post->title = $request->title;
         $post->description = $request->description;
-        $image = $request->image->store('images');
-        $post->imageLink = 'storage/' . $image;
+        if ($request->hasFile('image')) {
+            $image = $request->image->store('images');
+            $post->imageLink = 'storage/' . $image;
+        }
         $post->link = $request->link;
         $post->content = $request->content;
     }
