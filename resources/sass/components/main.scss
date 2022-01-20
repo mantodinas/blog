@@ -34,9 +34,17 @@ main {
                     transform: scale(1.1);
                     border: 1px solid #000000;
                 }
-    
-                .blog-img {
+                
+                .blog-img-container {
+                    background: #141414;
                     width: 100%;
+                    aspect-ratio: 3/2;
+                    display: flex;
+                    align-items: center;
+                    
+                    .blog-img {
+                        width: 100%;
+                    }
                 }
                 
                 .blog-title {
