@@ -11,7 +11,9 @@
             @auth
             <div class="buttons">
                 <div class="edit-btn-container">
-                    <a href="{{ route('post.edit', $post->link) }}" class="btn" type="submit">edit</a>
+                    <div class="btn-container">
+                        <a href="{{ route('post.edit', $post->link) }}" class="btn" type="submit">edit</a>
+                    </div>
                 </div>
     
                 <form action="{{ route('post.destroy', $post->link) }}" method="POST">
