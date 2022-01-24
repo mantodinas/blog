@@ -4,7 +4,7 @@
 <div class="create-blog-container">
     <form class="create-blog" action="{{ route('post.update', $post->link) }}" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_method" value="PATCH">
-        <h2>create blog</h2>
+        <h2>edit blog</h2>
         <label>image</label>
         <input type="file" name="image" accept="image/*">
         <label>link</label>
