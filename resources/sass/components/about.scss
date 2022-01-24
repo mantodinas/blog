@@ -12,13 +12,23 @@
             grid-template-columns: 100%;
         }
 
-
         h1 {
+            text-transform: capitalize;
             font-size: 50px;
             display: flex;
             justify-content: center;
         }
 
+        .about-paragrafh-1 {
+            text-align: center;
+        }
 
+        .about-paragrafh-2 {
+        
+        }
+
+        .about-paragrafh-3 {
+            text-align: center;
+        }
     }
 }
