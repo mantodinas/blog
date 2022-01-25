@@ -44,10 +44,18 @@ header {
             button {
                 display: none;
 
+                .fa-bars {
+                    font-size: 29px;
+                    color: white;
+                    background-color: black;
+                }
                 @media screen and (max-width: 700px) {
                     display: block;
-                    width: 50px;
-                    height: 50px;
+                    width: 45px;
+                    height: 45px;
+                    border: none;
+                    outline: none;
+                    background-color: black;
                 }
             }
         }
