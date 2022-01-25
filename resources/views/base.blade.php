@@ -21,17 +21,9 @@
         @endauth
 
         <div class="mobile-nav-bar">
-
-            <div class="dropdown-btn">
-                <i class="fa fa-bars"></i>
-            </div>
             <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
             <a id="post-search-btn" class="search-btn" href="#">search</a>
-
-            <div class="dropdown-content">
-                <a class="main" href="#"></a>
-                <a class="about" href="#"></a>
-            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </div>
 
