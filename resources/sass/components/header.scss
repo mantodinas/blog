@@ -75,9 +75,32 @@ header {
                     display: flex;
                 }
             }
+            
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                min-width: 160px;
+                a {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+            }
         }
+        
     }
-
+    .show {
+        display: block;
+        position: absolute;
+    }
+    
     .logo-container {
         display: flex;
         justify-content: center;
