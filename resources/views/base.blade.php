@@ -20,14 +20,18 @@
         <a class="logout" href="{{ route('logout') }}">logout</a>
         @endauth
 
-        <div class="dropdown-btn">
-            <button >
+        <div class="mobile-nav-bar">
+
+            <div class="dropdown-btn">
                 <i class="fa fa-bars"></i>
-            </button>
-        </div>
-        <div class="dropdown-content">
-            <a class="main" href="#"></a>
-            <a class="about" href="#"></a>
+            </div>
+            <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
+            <a id="post-search-btn" class="search-btn" href="#">search</a>
+
+            <div class="dropdown-content">
+                <a class="main" href="#"></a>
+                <a class="about" href="#"></a>
+            </div>
         </div>
     </div>
 
