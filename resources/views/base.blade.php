@@ -10,7 +10,7 @@
 <body>
 
 <header>
-    <div class="nav-bar">
+    <div class="nav-bar" id="NavBar">
         <a class="main-btn" href="{{ route('post.index') }}">main</a>
         <a class="about-btn" href="{{ route('about') }}">about</a>
         <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
@@ -19,10 +19,18 @@
         <a class="create-blog" href="{{ route('post.create') }}">create post</a>
         <a class="logout" href="{{ route('logout') }}">logout</a>
         @endauth
-        <button class="dropdown-btn"></button>
-        <div class="navbar-dropdown">
-            <a class="dropdown-btn" href="#"></a>
+
+        <div class="mobile-nav-bar">
+            <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
+            <a id="post-search-btn" class="search-btn" href="#">search</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
         </div>
+
     </div>
 
     <div class="logo-container">
