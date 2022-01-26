@@ -17,7 +17,8 @@ class BlogController extends BaseController
     public function index(Request $request): View
     {
         $search = $request->get('search');
-        $posts = empty($search) ? Post::all() : Post::where('title', 'like', '%'.$search.'%')->get();
+        $posts = empty($search) ? Post::latest()->get() : Post::where('title', 'like', '%'.$search.'%')->orderBy('id','desc')->get();
+
         
         return view('blog.index', ['posts' => $posts ]);
     }
