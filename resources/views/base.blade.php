@@ -23,12 +23,18 @@
         <div class="mobile-nav-bar">
             <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
             <a id="post-search-btn" class="search-btn" href="#">search</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            <div class="dropdown-content" id="myDropdown">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+
+            <div class="dropdown-container">
+                <div class="dropdown-click">
+                    <button onclick="myFunction()" class="dropdownBtn">btn</button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </div>
