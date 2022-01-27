@@ -72,15 +72,16 @@ header {
                     display: inline-block;
                 
                     .dropdownBtn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         background-color: #000000;
                         color: white;
                         height: 45px;
                         width: 45px;
                         border: none;
                         cursor: pointer;
-                        .fa-bars {
-                            font-size: 27px;
-                        }
+                        font-size: 35px;
                     }
                     
                 }
