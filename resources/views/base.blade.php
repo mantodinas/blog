@@ -26,11 +26,10 @@
 
             <div class="dropdown-container">
                 <div class="dropdown-click">
-                    <button id="mobileDropdown" class="dropdownBtn">btn</button>
+                    <button id="mobileDropdown" class="dropdownBtn">&#9776;</button>
                     <div class="dropdown-content" id="dropdownContent">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="{{ route('post.index') }}">main</a>
+                        <a href="{{ route('about') }}">about</a>
                     </div>
                 </div>
             </div>

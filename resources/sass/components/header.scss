@@ -8,7 +8,7 @@ header {
         height: 45px;
         @media screen and (max-width: 700px) {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
         }
 
         a {
@@ -47,13 +47,14 @@ header {
             display: none;
             @media screen and (max-width: 700px) {
                 display: flex;
+                justify-content: center;
             }
 
             .search-input {
                 display: none;
                 @media screen and (max-width: 700px) {
                     display: flex;
-                    min-width: 350px;
+                    background-color: aquamarine;
                 }
             }
 
@@ -71,12 +72,16 @@ header {
                     display: inline-block;
                 
                     .dropdownBtn {
-                        background-color: #3498DB;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #000000;
                         color: white;
-                        padding: 16px;
-                        font-size: 16px;
+                        height: 45px;
+                        width: 45px;
                         border: none;
                         cursor: pointer;
+                        font-size: 35px;
                     }
                     
                 }
