@@ -1,10 +1,10 @@
-/* toggle between hiding and showing the dropdown content */
-function myFunction() {
-	document.getElementById("dropdownContent").classList.toggle("show");
+export default () => {
+	document.getElementById('mobileDropdown').addEventListener('click', onDropdownClick)
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
+const onDropdownClick = (event) => {
+	document.getElementById("dropdownContent").classList.toggle("show");
+
 	if (!event.target.matches('.dropdownBtn')) {
 		var dropdowns = document.getElementsByClassName("dropdown-content");
 		var i;
