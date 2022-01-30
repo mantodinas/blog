@@ -48,13 +48,14 @@ header {
             @media screen and (max-width: 700px) {
                 display: flex;
                 justify-content: center;
+                width: 100%;
             }
 
             .search-input {
                 display: none;
                 @media screen and (max-width: 700px) {
                     display: flex;
-                    background-color: aquamarine;
+                    width: 70%;
                 }
             }
 
@@ -62,6 +63,7 @@ header {
                 display: none;
                 @media screen and (max-width: 700px) {
                     display: flex;
+                    width: 20%;
                 }
             }
             
