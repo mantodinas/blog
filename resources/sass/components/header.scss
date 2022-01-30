@@ -48,13 +48,14 @@ header {
             @media screen and (max-width: 700px) {
                 display: flex;
                 justify-content: center;
+                width: 100%;
             }
 
             .search-input {
                 display: none;
                 @media screen and (max-width: 700px) {
                     display: flex;
-                    background-color: aquamarine;
+                    width: 70%;
                 }
             }
 
@@ -62,6 +63,7 @@ header {
                 display: none;
                 @media screen and (max-width: 700px) {
                     display: flex;
+                    width: 20%;
                 }
             }
             
@@ -70,7 +72,8 @@ header {
                 .dropdown-click {
                     position: relative;
                     display: inline-block;
-                
+                    
+                    
                     .dropdownBtn {
                         display: flex;
                         justify-content: center;
@@ -90,15 +93,23 @@ header {
                     display: none;
                     position: absolute;
                     background-color: #f1f1f1;
-                    min-width: 160px;
-                    overflow: auto;
+                    min-width: 650%;
+                    overflow: none;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1;
+                    @media screen and (max-width: 640px) {
+                        min-width: 550%;
+                    }
+                    @media screen and (max-width: 440px) {
+                        min-width: 350%;
+                    }
                     a {
                         color: black;
                         padding: 12px 16px;
                         text-decoration: none;
                         display: block;
+                        display: flex;
+                        justify-content: start;
                         &:hover {
                             background-color: #ddd;
                         }
@@ -107,6 +118,7 @@ header {
                    
                 .show {
                     display: block;
+                    right: 0;
                 }
             }
             
@@ -114,7 +126,6 @@ header {
         
     }
 
-    
     .logo-container {
         display: flex;
         justify-content: center;
@@ -137,14 +148,24 @@ header {
             h1 {
                 text-transform: capitalize;
                 font-size: 80px;
+                @media screen and (max-width: 700px) {
+                    margin-top: 74px;
+                }
                 @media screen and (max-width: 550px) {
                     font-size: 70px;
+                    margin-top: 70px;
                 }
                 @media screen and (max-width: 400px) {
                     font-size: 60px;
+                    margin-top: 70px;
                 }
                 @media screen and (max-width: 340px) {
                     font-size: 50px;
+                    margin-top: 70px;
+                }
+                @media screen and (max-width: 301px) {
+                    font-size: 40px;
+                    margin-top: 70px;
                 }
             }
 
