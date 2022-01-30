@@ -30,6 +30,10 @@
                     <div class="dropdown-content" id="dropdownContent">
                         <a href="{{ route('post.index') }}">main</a>
                         <a href="{{ route('about') }}">about</a>
+                        @auth
+                        <a class="create-blog" href="{{ route('post.create') }}">create post</a>
+                        <a class="logout" href="{{ route('logout') }}">logout</a>
+                        @endauth
                     </div>
                 </div>
             </div>
