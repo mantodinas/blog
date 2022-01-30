@@ -38,12 +38,13 @@ main {
                 .blog-img-container {
                     background: #575757;
                     width: 100%;
-                    aspect-ratio: 3/2;
                     display: flex;
                     align-items: center;
                     
                     .blog-img {
                         width: 100%;
+                        aspect-ratio: 3/2;
+                        object-fit: contain;
                     }
                 }
                 
