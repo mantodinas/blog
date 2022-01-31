@@ -60,7 +60,15 @@
             outline: none;
             resize: vertical;
         }
+
+        .text-editor {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: -17px;
+            gap: 5px;
+        }
         
+
         button {
             width: 100%;
             text-transform: capitalize;
