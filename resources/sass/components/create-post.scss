@@ -44,6 +44,10 @@
             align-items: flex-start;
             text-transform: capitalize;
         }
+
+        .text-content-label {
+            margin-bottom: -15px;
+        }
         
         input {
             width: 98%;
@@ -51,6 +55,13 @@
             border: 1px solid #949494;
             outline: none;
             padding: 5px;
+        }
+
+        .text-editor {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: -17px;
+            gap: 5px;
         }
 
         textarea {
@@ -61,12 +72,6 @@
             resize: vertical;
         }
 
-        .text-editor {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: -17px;
-            gap: 5px;
-        }
         
 
         button {
