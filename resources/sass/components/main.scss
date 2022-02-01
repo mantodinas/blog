@@ -48,20 +48,24 @@ main {
                     }
                 }
                 
-                .blog-title {
-                    text-align: center;
-                    text-transform: capitalize;
+                .blog-text-container {
+                
+                    .blog-title {
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+        
+                    .short-description {
+                        padding: 0 10px 0 10px;
+                    }
+        
+                    .day-added {
+                        display: flex;
+                        justify-content: right;
+                        padding: 0 20px 10px 20px;
+                    }
                 }
-    
-                .short-description {
-                    padding: 0 10px 0 10px;
-                }
-    
-                .day-added {
-                    display: flex;
-                    justify-content: right;
-                    padding: 0 20px 10px 20px;
-                }
+
             }
         }
     }

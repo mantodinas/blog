@@ -11,7 +11,7 @@
         <label>title</label>
         <input type="text" name="title" placeholder="title...">
         <label>short description</label>
-        <textarea name="description" cols="30" rows="5">
+        <textarea name="description" cols="30" rows="5" maxlength="200">
         </textarea>
         <label class="text-content-label" >text content</label>
             <div class="text-editor">
