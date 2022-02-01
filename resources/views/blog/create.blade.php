@@ -15,13 +15,12 @@
         </textarea>
         <label class="text-content-label" >text content</label>
             <div class="text-editor">
-                <button class="text-size" id="textSize"><i class="fas fa-text-height"></i></button>
                 <button class="text-bold" id="textBold"><i class="fas fa-bold"></i></button>
                 <button class="text-underline" id="textUnderline"><i class="fas fa-underline"></i></button>
                 <button class="next-paragraph" id="nextParagraph"><i class="fas fa-paragraph"></i></button>
-                <button class="text-left" id="textLeft"><i class="fas fa-align-left"></i></button>
-                <button class="text-center" id="textCenter"><i class="fas fa-align-center"></i></button>
-                <button class="text-right" id="textRight"><i class="fas fa-align-right"></i></button>
+                <button class="text-left" id="alignLeft"><i class="fas fa-align-left"></i></button>
+                <button class="text-center" id="alignCenter"><i class="fas fa-align-center"></i></button>
+                <button class="text-right" id="alignRight"><i class="fas fa-align-right"></i></button>
                 <button class="text-color" id="textColor"><i class="fas fa-tint"></i></button>
             </div>
         <textarea name="content" cols="30" rows="5"></textarea>
