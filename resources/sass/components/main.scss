@@ -29,6 +29,7 @@ main {
             
             .blog {
                 background-color: #ffffff;
+                margin-bottom: 15px;
                 &:hover {
                     transition: 0.5s;
                     transform: scale(1.1);
@@ -49,20 +50,41 @@ main {
                 }
                 
                 .blog-text-container {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-areas:
+                    "blog-title"
+                    "short-description"
+                    "day-added";
                 
                     .blog-title {
+                        display: grid;
+                        grid-area: blog-title;
                         text-align: center;
                         text-transform: capitalize;
                     }
         
                     .short-description {
+                        display: grid;
+                        grid-area: short-description;
+                        height: 55px;
                         padding: 0 10px 0 10px;
+                        @media screen and (max-width: 277px) {
+                            padding-bottom: 30px;
+                        }
                     }
         
                     .day-added {
+                        display: grid;
+                        grid-area: day-added;
                         display: flex;
                         justify-content: right;
                         padding: 0 20px 10px 20px;
+                        @media screen and (max-width: 350px) {
+                            display: flex;
+                            justify-content: center;
+                            padding: 35px 0 0 0;
+                        }
                     }
                 }
 
