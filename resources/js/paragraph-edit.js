@@ -4,7 +4,7 @@ export default () => {
 
 //textBold
 
-//textUnderline ( add working link to text )
+//textUnderline ( add working link to text diffrent color )
 
 //nextParagraph ( text next line or emty row, space )
 
@@ -13,5 +13,3 @@ export default () => {
 //alignCenter
 
 //alignRight
-
-//textColor
