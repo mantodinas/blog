@@ -28,6 +28,7 @@
             display: flex;
             justify-content: center;
             text-transform: capitalize;
+            padding: 0 20px 0 20px;
         }
 
         .content {
@@ -106,7 +107,6 @@
                     }
                 }
 
-
                 form {
                     display: flex;
                     justify-content: flex-start;
@@ -140,8 +140,7 @@
                     }
                 }
             }
-
-
+            
             .day-created-container {
                 margin: 0 !important;
                 display: flex;
@@ -165,10 +164,6 @@
                     color: #000000;
                 }
             }
-            
-
-
-            
         }
     }
 }

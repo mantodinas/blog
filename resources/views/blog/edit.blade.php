@@ -10,7 +10,7 @@
         <label>link</label>
         <input type="text" name="link" placeholder="link..." value="{{ $post->link }}">
         <label>title</label>
-        <input type="text" name="title" placeholder="title..." value="{{ $post->title }}">
+        <input type="text" name="title" placeholder="title..." maxlength="10" value="{{ $post->title }}">
         <label>short description</label>
         <textarea name="description" cols="30" rows="5" maxlength="200">{{ $post->description }}</textarea>
         <label>text content</label>
