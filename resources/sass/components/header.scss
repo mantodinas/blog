@@ -21,6 +21,11 @@ header {
             height: 35px;
             background-color: #b3b3b3;
             color: #000000;
+            i {
+                font-size: 20px;
+                padding: 0 15px 0 15px;
+                color: #464646;
+            }
             &:hover {
                 background-color: #000000;
                 color: #FFFFFF;
