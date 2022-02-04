@@ -12,6 +12,13 @@
             grid-template-columns: 100%;
         }
 
+        h1 {
+            text-transform: capitalize;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
         .img-container {
             display: flex;
             justify-content: center;
@@ -26,13 +33,6 @@
                     width: 50%;
                 }
             }
-        }
-
-        h1 {
-            text-transform: capitalize;
-            font-size: 50px;
-            display: flex;
-            justify-content: center;
         }
 
         .about-paragrafh-1 {
