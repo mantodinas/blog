@@ -4,12 +4,28 @@
     .about {
         display: grid;
         grid-template-columns: 1024px;
-        min-height: 300px;
+        min-height: 350px;
         background-color: white;
         margin-bottom: 50px;
         padding: 10px;
         @media screen and (max-width: 1024px) {
             grid-template-columns: 100%;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 30%;
+                object-fit: cover;
+                @media screen and (max-width: 550px) {
+                    width: 40%;
+                }
+                @media screen and (max-width: 350px) {
+                    width: 50%;
+                }
+            }
         }
 
         h1 {
