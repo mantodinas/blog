@@ -11,7 +11,7 @@
                     <div class="blog-text-container">
                         <h2 class="blog-title">{{ $post->title }}</h2>
                         <p class="short-description">{{ $post->description }}</p>
-                        <h4 class="day-added">{{ $post->created_at->format('Y m d') }}</h4>
+                        <h4 class="day-added"><i class="far fa-clock"></i>{{ $post->created_at->format('Y m d') }}</h4>
                     </div>
                 </div>
             </a>
