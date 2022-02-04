@@ -14,7 +14,7 @@
         <a class="main-btn" href="{{ route('post.index') }}">main</a>
         <a class="about-btn" href="{{ route('about') }}">about</a>
         <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
-        <a id="post-search-btn" class="search-btn" href="#">search</a>
+        <a id="post-search-btn" class="search-btn" href="#"><i class="fas fa-search"></i></a>
         @auth
         <a class="create-blog" href="{{ route('post.create') }}">create post</a>
         <a class="logout" href="{{ route('logout') }}">logout</a>
@@ -22,7 +22,7 @@
 
         <div class="mobile-nav-bar">
             <input id="post-search-input" class="search-input" type="text" placeholder="Search blog...">
-            <a id="post-search-btn" class="search-btn" href="#">search</a>
+            <a id="post-search-btn" class="search-btn" href="#"><i class="fas fa-search"></i></a>
 
             <div class="dropdown-container">
                 <div class="dropdown-click">
