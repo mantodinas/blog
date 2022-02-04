@@ -25,7 +25,7 @@
             </div>
             @endauth
             <div class="day-created-container">
-                <div class="day-created">{{ $post->created_at->format('Y m d') }}</div>
+                <div class="day-created"><i class="far fa-clock"></i>{{ $post->created_at->format('Y m d') }}</div>
             </div>
         </div>
     </div>

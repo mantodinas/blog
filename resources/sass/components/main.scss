@@ -92,9 +92,14 @@ main {
                         grid-area: day-added;
                         display: flex;
                         justify-content: right;
+                        align-items: center;
                         margin-bottom: 10px;
                         padding: 0 10px 0 10px;
+                        gap: 8px;
                         color: #777777;
+                            i {
+                                font-size: 14px;
+                            }
                         @media screen and (max-width: 350px) {
                             display: flex;
                             justify-content: center;
