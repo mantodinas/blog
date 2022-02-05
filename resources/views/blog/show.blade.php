@@ -5,7 +5,7 @@
     <div class="blog-page">
         <img class="image" src="{{ url($post->imageLink) }}">
         <h1 class="title">{{ $post->title }}</h1>
-        <p class="content">{{ $post->content }}</p>
+        <div class="content">{!! $post->content !!}</div>
 
         <div class="blog-bottom">
             @auth

@@ -14,6 +14,10 @@
         padding: 0 20px 0 20px;
         background-color: #ffffff;
         row-gap: 10px;
+
+        .ck.ck-voice-label {
+            display: none;
+        }
         
         h2 {
             display: flex;
@@ -44,10 +48,6 @@
             align-items: flex-start;
             text-transform: capitalize;
         }
-
-        .text-content-label {
-            margin-bottom: -15px;
-        }
         
         input {
             width: 98%;
@@ -60,7 +60,6 @@
         .text-editor {
             display: flex;
             flex-direction: row;
-            margin-bottom: -17px;
             gap: 5px;
         }
 
@@ -71,8 +70,6 @@
             outline: none;
             resize: vertical;
         }
-
-        
 
         button {
             width: 100%;

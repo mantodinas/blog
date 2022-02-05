@@ -7,4 +7,5 @@ import paragraphEdit from './paragraph-edit';
 window.onload = () => {
     searchPost();
     initDropdown();
+    paragraphEdit();
 };
