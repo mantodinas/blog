@@ -1,15 +1,18 @@
-export default () => {
-	document.getElementById('textBold').addEventListener('click', btn.style.fontWeight = '700')
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
+export default() => {
+	let contentEditor = document.querySelector('#textEditor');
+
+	if (contentEditor == null) {
+		return;
+	}
+
+	ClassicEditor
+	.create(contentEditor)
+	.then( editor => {
+		console.log( editor );
+	} )
+	.catch( error => {
+		console.error( error );
+	} );
 }
-
-//textBold
-
-//textUnderline ( add working link to text diffrent color )
-
-//nextParagraph ( text next line or emty row, space )
-
-//alignLeft
-
-//alignCenter
-
-//alignRight

@@ -14,7 +14,7 @@
         <label>short description</label>
         <textarea name="description" cols="30" rows="5" maxlength="200">{{ $post->description }}</textarea>
         <label>text content</label>
-        <textarea name="content" cols="30" rows="5">{{ $post->content }}</textarea>
+        <textarea id="textEditor" name="content" cols="30" rows="5">{!! $post->content !!}</textarea>
         <button>submit</button>
     </form>
 </div>
