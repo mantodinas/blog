@@ -5,7 +5,7 @@
     <form class="create-blog" action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data">
         <h2>create blog</h2>
         <label>image</label>
-        <input type="file" name="image" accept="image/*">
+        <input type="file" name="image" accept="image/*" required>
         <label>link</label>
         <input type="text" name="link" maxlength="75" placeholder="link...">
         <label>title</label>
