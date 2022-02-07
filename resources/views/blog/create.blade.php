@@ -13,7 +13,7 @@
         <label>short description</label>
         <textarea  name="description" cols="30" rows="5" maxlength="200">
         </textarea>
-        <label class="text-content-label" >text content</label>
+        <label class="text-content-label">text content</label>
         <textarea  id="textEditor" name="content" cols="30" rows="5"></textarea>
         <button>submit</button>
     </form>
