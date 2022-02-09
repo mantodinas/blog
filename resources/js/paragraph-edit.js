@@ -8,7 +8,7 @@ export default() => {
 	}
 
 	ClassicEditor
-	.create(contentEditor)
+	.create(contentEditor, config)
 	.then( editor => {
 		console.log( editor );
 	} )
@@ -16,3 +16,11 @@ export default() => {
 		console.error( error );
 	} );
 }
+
+const config = {
+	
+	toolbar: 
+		['heading', 'bold', 'link', 'left', 'center', 'right']
+		//textalign 'left', 'center', 'right' does not work
+		
+};
