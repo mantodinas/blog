@@ -20,22 +20,7 @@ export default() => {
 const config = {
 	
 	toolbar: 
-		['heading', 'bold', 'link']
-
-		//items: [  'bold', 'left', 'right' ],
-		// items: [
-		// 	 '|',
-		// 	  '|',
-		// 	 '|',
-		// 	  '|',
-		// 	'bold',  'strikethrough', 'underline', 'subscript', 'superscript', '|',
-		// 	 '|',
-		// 	'outdent', 'indent', '|',
-		// 	'bulletedList', 'numberedList',  '|',
-		// 	'code', 'codeBlock', '|',
-		// 	'insertTable', '|',
-		// 	'uploadImage', 'blockQuote', '|',
-		// 	'undo', 'redo'
-		// ],
-
+		['heading', 'bold', 'link', 'left', 'center', 'right']
+		//textalign 'left', 'center', 'right' does not work
+		
 };
