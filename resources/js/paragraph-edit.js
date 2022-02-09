@@ -8,7 +8,7 @@ export default() => {
 	}
 
 	ClassicEditor
-	.create(contentEditor)
+	.create(contentEditor, config)
 	.then( editor => {
 		console.log( editor );
 	} )
@@ -16,3 +16,26 @@ export default() => {
 		console.error( error );
 	} );
 }
+
+const config = {
+	
+	toolbar: 
+		['heading', 'bold', 'link']
+
+		//items: [  'bold', 'left', 'right' ],
+		// items: [
+		// 	 '|',
+		// 	  '|',
+		// 	 '|',
+		// 	  '|',
+		// 	'bold',  'strikethrough', 'underline', 'subscript', 'superscript', '|',
+		// 	 '|',
+		// 	'outdent', 'indent', '|',
+		// 	'bulletedList', 'numberedList',  '|',
+		// 	'code', 'codeBlock', '|',
+		// 	'insertTable', '|',
+		// 	'uploadImage', 'blockQuote', '|',
+		// 	'undo', 'redo'
+		// ],
+
+};

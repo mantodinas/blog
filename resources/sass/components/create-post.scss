@@ -18,7 +18,7 @@
         .ck.ck-voice-label {
             display: none;
         }
-        
+
         h2 {
             display: flex;
             align-self: center;
@@ -78,11 +78,19 @@
             color: #ffffff;
             height: 35px;
             border: none;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 1px;
+            margin-bottom: 1px;
             &:hover {
                 background-color: #383838;
                 font-weight: bold;
+            }
+        }
+    }
+
+    .ck.ck-button.ck-button_with-text {
+        @media screen and (max-width: 300px) {
+            span {
+                display: none;
             }
         }
     }
