@@ -15,6 +15,15 @@
         background-color: #ffffff;
         row-gap: 10px;
 
+        input:required:invalid[type="file"].select-img {
+           color: red; 
+           border: none;
+        }
+
+        input:required:invalid {
+            border: 1px solid red;
+        }
+
         .ck.ck-voice-label {
             display: none;
         }
