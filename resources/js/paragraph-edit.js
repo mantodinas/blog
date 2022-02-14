@@ -20,7 +20,6 @@ export default() => {
 const config = {
 	
 	toolbar: 
-		['heading', 'bold', 'link', 'left', 'center', 'right']
-		//textalign 'left', 'center', 'right' does not work
+		['heading', 'bold', 'link']
 		
 };
