@@ -4,13 +4,35 @@ export default () => {
 
 const onPostFormSubmit = (event) => {
 
-    event.preventDefault(); // Stops form submit execution
-    if (inputtx.value.length == 0)
-      { 
-         alert("message");  	
-         return false; 
-      }  	
-      return true; 
+   event.preventDefault(); // Stops form submit execution
+   let link = event.srcElement.querySelector('input[name=link]');
+   console.log(link.value);
+   if(link.value === '') {
+
+      printValidationError('padaviau i error funkctija kintamaji', 'nenutylau');      
+   } else {
+      printValidationSuccess();
+   }
+   
+   
+}
+
+const printValidationError = (variableNext, aaaa) => {
+   console.log('nevalidus');
+   console.log(variableNext);
+   console.log(aaaa);
+
+}
+
+const printValidationSuccess = () => {
+   //
 
 
+
+   ///
+
+
+   ///
+   ///
+   console.log('validus');
 }
