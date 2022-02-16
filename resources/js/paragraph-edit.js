@@ -21,5 +21,4 @@ const config = {
 	
 	toolbar: 
 		['heading', 'bold', 'link']
-		
 };
