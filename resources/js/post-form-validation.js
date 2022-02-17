@@ -5,34 +5,35 @@ export default () => {
 const onPostFormSubmit = (event) => {
 
    event.preventDefault(); // Stops form submit execution
-   let link = event.srcElement.querySelector('input[name=link]');
-   console.log(link.value);
+   let link = event.srcElement.querySelector('.link, .title');
    if(link.value === '') {
 
-      printValidationError('padaviau i error funkctija kintamaji', 'nenutylau');      
+      linkError();
+      titleError();         
    } else {
-      printValidationSuccess();
+      linkSuccess();
+      titleSuccess();
    }
    
    
 }
 
-const printValidationError = (variableNext, aaaa) => {
+//error
+const linkError = () => {
    console.log('nevalidus');
-   console.log(variableNext);
-   console.log(aaaa);
-
+   alert('link is not filed');
 }
 
-const printValidationSuccess = () => {
-   //
+const titleError = () => {
+   console.log('nevalidus');
+   alert('title is not filed');
+}
 
+//success
+const linkSuccess = () => {
+   console.log('link success');
+}
 
-
-   ///
-
-
-   ///
-   ///
-   console.log('validus');
+const titleSuccess = () => {
+   console.log('title success');
 }
