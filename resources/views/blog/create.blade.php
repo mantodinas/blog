@@ -7,7 +7,7 @@
         <label>image</label>
         <input class="select-img" type="file" name="image" accept="image/*">
         <label>link</label>
-        <input id="link" type="text" name="link" maxlength="75" placeholder="link...">
+        <input class="link" id="link" type="text" name="link" maxlength="75" placeholder="link...">
         <label>title</label>
         <input type="text" name="title" maxlength="75" placeholder="title...">
         <label>short description</label>
