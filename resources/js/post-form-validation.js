@@ -5,7 +5,7 @@ export default () => {
 const onPostFormSubmit = (event) => {
 
    event.preventDefault(); // Stops form submit execution
-   let link = event.srcElement.querySelector('.link, .title');
+   let link = event.srcElement.querySelector('input[name=link] [name=title]');
    if(link.value === '') {
 
       linkError();
@@ -17,7 +17,6 @@ const onPostFormSubmit = (event) => {
    
    
 }
-
 //error
 const linkError = () => {
    console.log('nevalidus');
