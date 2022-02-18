@@ -7,9 +7,9 @@
         <label>image</label>
         <input type="file" name="image" accept="image/*">
         <label>link</label>
-        <input id="link" type="text" name="link" maxlength="75" placeholder="link...">
+        <input type="text" name="link" placeholder="link..." maxlength="75" >
         <label>title</label>
-        <input type="text" name="title" maxlength="75" placeholder="title...">
+        <input type="text" name="title" placeholder="title..." maxlength="75">
         <label>short description</label>
         <textarea name="description" cols="30" rows="5" maxlength="200"></textarea>
         <label>text content</label>
