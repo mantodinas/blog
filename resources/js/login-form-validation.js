@@ -1,8 +1,8 @@
 export default () => {
-	document.getElementById('login-form').addEventListener('submit', onPostFormSubmit)
+	document.getElementById('login-form').addEventListener('login', onLoginFormSubmit)
 }
 
-const onPostFormSubmit = (event) => {
+const onLoginFormSubmit = (event) => {
 
     let email = event.srcElement.querySelector('input[name=email]');
     let password = event.srcElement.querySelector('input[name=password]');

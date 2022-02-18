@@ -1,8 +1,8 @@
 export default () => {
-	document.getElementById('edit-form').addEventListener('submit', onPostFormSubmit)
+	document.getElementById('edit-form').addEventListener('submit', onEditFormSubmit)
 }
 
-const onPostFormSubmit = (event) => {
+const onEditFormSubmit = (event) => {
 
 
     //let image = event.srcElement.querySelector('input[name=image]');
