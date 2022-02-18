@@ -5,11 +5,11 @@ export default () => {
 const onPostFormSubmit = (event) => {
 
 
+   let image = event.srcElement.querySelector('input[name=image]');
    let link = event.srcElement.querySelector('input[name=link]');
    let title = event.srcElement.querySelector('input[name=title]');
    let description = event.srcElement.querySelector('textarea[name=description]');
    let content = event.srcElement.querySelector('textarea[name=content]');
-   let image = event.srcElement.querySelector('input[name=image]');
    let ckEditor = event.srcElement.querySelector('div.ck.ck-reset.ck-editor.ck-rounded-corners');
  
 
@@ -45,7 +45,6 @@ const onPostFormSubmit = (event) => {
    if(content.value === '') {
       manyError('content', event);
       ckEditor.classList.add('error');
-      
    } else {
       ckEditor.classList.remove('error');
    }

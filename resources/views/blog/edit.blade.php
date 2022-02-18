@@ -6,7 +6,7 @@
         <input type="hidden" name="_method" value="PATCH">
         <h2>edit blog</h2>
         <label>image</label>
-        <input class="select-img" type="file" name="image" accept="image/*" > <!--does not work with required-->
+        <input class="select-img" type="file" name="image" accept="image/*" >
         <label>link</label>
         <input type="text" name="link" placeholder="link..." maxlength="75" value="{{ $post->link }}" required>
         <label>title</label>
