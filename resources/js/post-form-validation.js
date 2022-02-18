@@ -4,35 +4,54 @@ export default () => {
 
 const onPostFormSubmit = (event) => {
 
-   event.preventDefault(); // Stops form submit execution
-   let link = event.srcElement.querySelector('input[name=link] [name=title]');
-   if(link.value === '') {
 
-      linkError();
-      titleError();         
+   let link = event.srcElement.querySelector('input[name=link]');
+   let title = event.srcElement.querySelector('input[name=title]');
+   let description = event.srcElement.querySelector('textarea[name=description]');
+   let content = event.srcElement.querySelector('textarea[name=content]');
+   let image = event.srcElement.querySelector('input[name=image]');
+   let ckEditor = event.srcElement.querySelector('div.ck.ck-reset.ck-editor.ck-rounded-corners');
+ 
+
+   if(image.value === '') {
+      manyError('image', event); 
+      image.classList.add('img-error');  
+      
    } else {
-      linkSuccess();
-      titleSuccess();
+      image.classList.remove('img-error');  
    }
    
+   if(link.value === '') {
+      manyError('link', event);
+      link.classList.add('error');  
+   } else {
+      link.classList.remove('error');  
+   }
+
+   if(title.value === '') {
+      manyError('title', event);  
+      title.classList.add('error');  
+   } else {
+      title.classList.remove('error');  
+   }
    
+   if(description.value === '') {
+      manyError('description', event);
+      description.classList.add('error');    
+   } else {
+      description.classList.remove('error');    
+   }
+
+   if(content.value === '') {
+      manyError('content', event);
+      ckEditor.classList.add('error');
+      
+   } else {
+      ckEditor.classList.remove('error');
+   }
 }
+
 //error
-const linkError = () => {
-   console.log('nevalidus');
-   alert('link is not filed');
-}
-
-const titleError = () => {
-   console.log('nevalidus');
-   alert('title is not filed');
-}
-
-//success
-const linkSuccess = () => {
-   console.log('link success');
-}
-
-const titleSuccess = () => {
-   console.log('title success');
+const manyError = (field, event) => {
+   event.preventDefault(); // Stops form submit execution
 }
