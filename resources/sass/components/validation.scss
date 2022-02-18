@@ -1,3 +1,11 @@
-.error{
-    border-color:red;
+.error {
+    border: 1px solid #eb4d4d !important;
+    -webkit-box-shadow: 0px 0px 4px #eb4d4d;
+       -moz-box-shadow: 0px 0px 4px #eb4d4d;
+            box-shadow: 0px 0px 4px #eb4d4d; 
+}
+
+.img-error {
+    color: #eb4d4d;
+    font-weight: bold;
 }
