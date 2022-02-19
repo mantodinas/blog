@@ -1,5 +1,8 @@
 export default () => {
-	document.getElementById('post-form').addEventListener('submit', onPostFormSubmit)
+   let form = document.getElementById('post-form');
+   if(form != null) {
+	   form.addEventListener('submit', onPostFormSubmit);
+   }
 }
 
 const onPostFormSubmit = (event) => {
@@ -14,7 +17,7 @@ const onPostFormSubmit = (event) => {
  
 
    if(image.value === '') {
-      manyError('image', event); 
+      manyError(event); 
       image.classList.add('img-error');  
       
    } else {
@@ -22,35 +25,35 @@ const onPostFormSubmit = (event) => {
    }
    
    if(link.value === '') {
-      manyError('link', event);
+      manyError(event);
       link.classList.add('error');  
    } else {
       link.classList.remove('error');  
    }
 
    if(title.value === '') {
-      manyError('title', event);  
+      manyError(event);  
       title.classList.add('error');  
    } else {
       title.classList.remove('error');  
    }
    
    if(description.value === '') {
-      manyError('description', event);
+      manyError(event);
       description.classList.add('error');    
    } else {
       description.classList.remove('error');    
    }
 
    if(content.value === '') {
-      manyError('content', event);
+      manyError(event);
       ckEditor.classList.add('error');
    } else {
       ckEditor.classList.remove('error');
    }
 }
 
-//error
-const manyError = (field, event) => {
+
+const manyError = (event) => {
    event.preventDefault(); // Stops form submit execution
 }

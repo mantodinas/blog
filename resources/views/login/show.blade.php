@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container-login">
-        <form class="login" method="POST">
+        <form id="login-form" class="login" method="POST">
             <h2>login</h2>
             <label for="">username</label>
             <input type="text" name="email" placeholder="username...">
