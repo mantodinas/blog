@@ -1,5 +1,8 @@
 export default () => {
-	document.getElementById('login-form').addEventListener('login', onLoginFormSubmit)
+	let loginForm = document.getElementById('login-form'); 
+   if(loginForm != null) {
+      loginForm.addEventListener('submit', onLoginFormSubmit);
+   }
 }
 
 const onLoginFormSubmit = (event) => {
@@ -8,14 +11,14 @@ const onLoginFormSubmit = (event) => {
     let password = event.srcElement.querySelector('input[name=password]');
     
     if(email.value === '') {
-       manyError('email', event);
+       manyError(event);
        email.classList.add('error');  
     } else {
        email.classList.remove('error');  
     }
  
     if(password.value === '') {
-       manyError('password', event);  
+       manyError(event);  
        password.classList.add('error');  
     } else {
        password.classList.remove('error');  
