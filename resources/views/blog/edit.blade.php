@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="create-blog-container">
-    <form class="create-blog" action="{{ route('post.update', $post->link) }}" method="POST" enctype="multipart/form-data">
+    <form id="edit-form" class="create-blog" action="{{ route('post.update', $post->link) }}" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_method" value="PATCH">
         <h2>edit blog</h2>
         <label>image</label>
