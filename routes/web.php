@@ -3,7 +3,8 @@
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\AboutController; 
+use App\Http\Controllers\AboutController;
+use Illuminate\Support\Facades\Hash; 
 
 /*
 |--------------------------------------------------------------------------
