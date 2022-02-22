@@ -30,11 +30,16 @@ main {
             .blog {
                 background-color: #ffffff;
                 margin-bottom: 15px;
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                    border: 1px solid #000000;
+                }
                 @media screen and (min-width: 1050px) {
                     &:hover {
-                        transition: 0.5s;
-                        transform: scale(1.1);
-                        border: 1px solid #000000;
+                        transition: none;
+                        transform: none;
+                        border: none;
                     }
                 }
                 
