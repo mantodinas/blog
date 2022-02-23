@@ -35,7 +35,7 @@ main {
                     transform: scale(1.1);
                     border: 1px solid #000000;
                 }
-                @media screen and (min-width: 1050px) {
+                @media screen and (max-width: 1050px) {
                     &:hover {
                         transition: none;
                         transform: none;
