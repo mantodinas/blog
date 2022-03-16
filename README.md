@@ -16,10 +16,10 @@ font-awesome
 ckeditor5
 ```
 
+## Created by
 Designed and created by Mantas Petrauskas
 <br>more projects https://github.com/mantodinas
 <br>Back-end was helped by https://github.com/zydrunasG
-
 Website created for educational purposes learning and improving front-end.
 
 Website published at: http://www.blogabouttechnology.info/
