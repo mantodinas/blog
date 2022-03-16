@@ -5,9 +5,17 @@
 </p>
 
 
-instalition 
-
+## Project Setup
 ```sh
+Instal:
+npm composer pacageses
+php node
+webpack sass loader
+MySQL workbanch
+font-awesome
+ckeditor5
+```
+
 Designed and created by Mantas Petrauskas
 <br>more projects https://github.com/mantodinas
 <br>Back-end was helped by https://github.com/zydrunasG
@@ -15,7 +23,7 @@ Designed and created by Mantas Petrauskas
 Website created for educational purposes learning and improving front-end.
 
 Website published at: http://www.blogabouttechnology.info/
-```
+
 
 
 
