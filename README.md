@@ -6,7 +6,7 @@
 
 ## About project
 The project was created using Laravel Framework 8.77.1. 
-<br>Website in which only admin can create blogs and post them. Blogs contain Image, link, title, 
+<br>Website in which only admin can create blogs, edit, delete and post them. Blogs contain Image, link, title, 
 <br>a short description, and text content. Blog create and login forms have js validation for 
 <br>empty field. Also there is search for blogs. 
 <br>Login page http://www.blogabouttechnology.info/login have protection from creating and 
