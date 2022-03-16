@@ -7,12 +7,12 @@
 
 ## Project Setup
 Instal:
-npm composer pacageses
-php node
-webpack sass loader
-MySQL workbanch
-font-awesome
-ckeditor5
+<br>npm composer pacageses
+<br>php node
+<br>webpack sass loader
+<br>MySQL workbanch
+<br>font-awesome
+<br>ckeditor5
 
 ## Created by
 Designed and created by Mantas Petrauskas
