@@ -10,7 +10,7 @@ The project was created using Laravel Framework 8.77.1.
 <br>a short description, and text content. Blog create and login forms have js validation for 
 <br>empty field. Also there is search for blogs. 
 <br>Blog has protection from creating and posting blog post without login.
-<br>(Login page: http://www.blogabouttechnology.info/login)  
+<br>(Login page: http://www.blogabouttechnology.info/login).
 <br>Also has responsive design (pc, tablet, mobile).
 <br>Website created for educational purposes learning and improving front-end.
 
