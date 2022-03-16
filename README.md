@@ -30,9 +30,8 @@ Designed and created by Mantas Petrauskas
 <br>
 <br>Website published at: http://www.blogabouttechnology.info/
 
-![screenshot](../img/screenshots/top.jpgjpg)
 
-![screenshot](./public/img/screenshots/top.jpgjpg)
+![screenshot](./public/img/screenshots/top.jpg)
 
 ![screenshot](./public/img/screenshots/top.jpgjpg)
 
