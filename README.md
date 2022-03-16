@@ -6,7 +6,6 @@
 
 
 ## Project Setup
-```sh
 Instal:
 npm composer pacageses
 php node
@@ -14,7 +13,6 @@ webpack sass loader
 MySQL workbanch
 font-awesome
 ckeditor5
-```
 
 ## Created by
 Designed and created by Mantas Petrauskas
