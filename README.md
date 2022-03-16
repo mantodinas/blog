@@ -37,10 +37,10 @@ Designed and created by Mantas Petrauskas
 
 ![screenshot](./public/img/screenshots/blog-page.jpg)
 
-![screenshot](./public/img/screenshots/bottom.jpg)
-
 ![screenshot](./public/img/screenshots/login.jpg)
 
 ![screenshot](./public/img/screenshots/Create-post.jpg)
 
 ![screenshot](./public/img/screenshots/edit-blog.jpg)
+
+![screenshot](./public/img/screenshots/bottom.jpg)
